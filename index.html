@@ -80,13 +80,13 @@
     .top-ribbon-bar {
       width: 100%;
       background: #020712;
-      border-bottom: 1px solid rgba(56, 189, 248, 0.28);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 38px;
+      height: 48px;
       margin-bottom: 16px;
       position: sticky;
       top: 0;
@@ -101,7 +101,7 @@
     }
 
     .ribbon-img {
-      height: 32px;
+      height: 46px;
       width: auto;
       object-fit: contain;
       flex-shrink: 0;
@@ -422,9 +422,40 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center 35%;
       display: block;
       border-radius: 11px;
-      z-index: 2;
+      z-index: 1;
+    }
+
+    .photo-overlay-tag {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      z-index: 3;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      background: rgba(7, 9, 14, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      color: #38bdf8;
+      padding: 4px 10px;
+      border-radius: 999px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .photo-overlay-tag::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #38bdf8;
+      box-shadow: 0 0 6px #38bdf8;
     }
 
     .photo-placeholder {
@@ -882,7 +913,7 @@
       <!-- Nome somente em branco -->
       <h1 class="main-title">Catálogo de Black Friday</h1>
       <p class="clinic-subtitle">
-        Condições exclusivas para você agendar seus procedimentos.<br>Toque no procedimento para ver detalhes, fotos e valores.
+        Toque no procedimento para ver detalhes, fotos e valores.
       </p>
 
       <!-- FILTRO DE CATEGORIAS (MOBILE) -->
@@ -934,16 +965,8 @@
             <div class="accordion-body-mobile">
               <!-- BOX PADRONIZADA ANTES & DEPOIS -->
               <div class="before-after-box" id="box-botox">
-                <img src="" alt="Antes e Depois - Botox" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                    <circle cx="12" cy="13" r="4"/>
-                  </svg>
-                  <span class="placeholder-title">Resultado Clínico</span>
-                  <span class="placeholder-desc">Espaço reservado para o antes e depois do Botox.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <!-- DETALHES -->
@@ -1011,13 +1034,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-bioestimulador">
-                <img src="" alt="Antes e Depois - Bioestimulador de Colágeno" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Firmeza e Densidade</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado do Bioestimulador.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1083,13 +1101,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-preenchimento">
-                <img src="" alt="Antes e Depois - Preenchimento" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Contorno e Volume</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1155,13 +1168,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-cicatriz-acne">
-                <img src="" alt="Antes e Depois - Cicatriz de Acne com Radiofrequência" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Remodelação Dérmica</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado das 3 sessões.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1227,13 +1235,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-microagulhamento">
-                <img src="" alt="Antes e Depois - Microagulhamento" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Textura e Poros</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado do Microagulhamento.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1299,13 +1302,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-dermaplaning">
-                <img src="" alt="Antes e Depois - Limpeza de Pele com Dermaplaning" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Pele de Porcelana</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado com Dermaplaning.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1371,13 +1369,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-peeling">
-                <img src="" alt="Antes e Depois - Limpeza de Pele com Peeling" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Pele Limpa e Renovada</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado da Limpeza com Peeling.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1455,13 +1448,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-gluteo">
-                <img src="" alt="Antes e Depois - Preenchimento Glúteo 20ml" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Contorno e Volume</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento Glúteo.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1527,13 +1515,8 @@
           <div class="accordion-content">
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-criolipolise">
-                <img src="" alt="Antes e Depois - Criolipólise" class="procedure-photo" onerror="this.style.display='none'">
-                <div class="photo-placeholder">
-                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                  <span class="placeholder-title">Redução de Medidas</span>
-                  <span class="placeholder-desc">Espaço reservado para o resultado da Criolipólise.</span>
-                </div>
+                <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
+                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1636,7 +1619,7 @@
   <script>
     // === CONFIGURAÇÃO DE WHATSAPP ===
     const urlParams = new URLSearchParams(window.location.search);
-    const WHATSAPP_PHONE = urlParams.get('phone') || "";
+    const WHATSAPP_PHONE = urlParams.get('phone') || "558599837247";
     const FALLBACK_LINK = urlParams.get('link') || "https://chat.whatsapp.com/KqTUe1b6V32695FqRzC1Vm";
 
     function buildWhatsAppUrl(messageText) {
