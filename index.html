@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Catálogo Black Friday 2026 | Luciane Lima Estética Avançada</title>
-  <meta name="description" content="Condições especiais de Black Friday em procedimentos faciais e corporais exclusivos da Dra. Luciane Lima.">
+  <title>Catálogo de Black Friday | Luciane Lima Estética Avançada</title>
+  <meta name="description" content="Catálogo exclusivo de Black Friday com condições especiais da Dra. Luciane Lima.">
 
   <!-- Meta Pixel Code (Pixel Luciane - ID: 1440156261235474) -->
   <script>
@@ -25,29 +25,28 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- Google Fonts: Plus Jakarta Sans (fino, elegante e limpo, sem fontes cursivas) -->
+  <!-- Google Fonts: Plus Jakarta Sans (fino, clean e sem cursivas) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --bg-dark: #06080d;
-      --card-bg: rgba(11, 16, 27, 0.92);
-      --card-inner: rgba(18, 25, 41, 0.75);
-      --card-border: rgba(56, 189, 248, 0.16);
-      --card-border-hover: rgba(56, 189, 248, 0.38);
+      --bg-dark: #07090e;
+      --card-bg: rgba(13, 18, 28, 0.94);
+      --card-inner: rgba(19, 26, 42, 0.7);
+      --card-border: rgba(56, 189, 248, 0.15);
+      --card-border-hover: rgba(56, 189, 248, 0.35);
       
-      /* Identidade Visual Luciane: Azul Elétrico, Azul Real e Preto Profundo */
+      /* Identidade Visual Luciane Lima */
       --blue-light: #38bdf8;
       --blue-electric: #0284c7;
       --blue-dark: #1e40af;
-      --blue-gradient: linear-gradient(135deg, #ffffff 0%, #38bdf8 55%, #0284c7 100%);
-      --glow-accent: rgba(56, 189, 248, 0.20);
+      --glow-accent: rgba(56, 189, 248, 0.18);
       
       --wp-green: #25D366;
       --wp-dark: #128C7E;
-      --text-main: #f8fafc;
+      --text-main: #ffffff;
       --text-muted: #94a3b8;
       --text-dim: #64748b;
       --radius-sm: 10px;
@@ -70,104 +69,83 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 24px 16px 120px;
+      padding: 16px 14px 110px;
       position: relative;
       overflow-x: hidden;
       font-weight: 300;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* Iluminação de fundo estética */
+    /* Iluminação sutil de fundo */
     body::before {
       content: "";
       position: fixed;
-      top: -120px;
+      top: -80px;
       left: 50%;
       transform: translateX(-50%);
-      width: 650px;
-      height: 450px;
-      background: radial-gradient(ellipse at top, var(--glow-accent) 0%, rgba(6, 8, 13, 0) 70%);
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, var(--glow-accent) 0%, rgba(7, 9, 14, 0) 70%);
       pointer-events: none;
       z-index: 0;
     }
 
-    body::after {
-      content: "";
-      position: fixed;
-      bottom: -150px;
-      right: 10%;
-      width: 450px;
-      height: 450px;
-      background: radial-gradient(circle, rgba(30, 64, 175, 0.12) 0%, rgba(6, 8, 13, 0) 70%);
-      pointer-events: none;
-      z-index: 0;
-    }
-
+    /* Container 100% Mobile First */
     .container {
       width: 100%;
-      max-width: 860px;
+      max-width: 430px;
       position: relative;
       z-index: 1;
+      margin: 0 auto;
     }
 
-    /* === HEADER LUXURY === */
+    /* === HEADER MOBILE === */
     .header-card {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
       border-radius: var(--radius-lg);
-      padding: 32px 24px 28px;
+      padding: 24px 18px 20px;
       text-align: center;
       backdrop-filter: blur(20px);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8),
-                  0 0 30px -5px rgba(56, 189, 248, 0.10);
-      margin-bottom: 24px;
-    }
-
-    .badge-top {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(56, 189, 248, 0.10);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: var(--blue-light);
-      padding: 6px 16px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1.2px;
-      text-transform: uppercase;
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8),
+                  0 0 25px -5px rgba(56, 189, 248, 0.08);
       margin-bottom: 20px;
-      box-shadow: 0 0 16px rgba(56, 189, 248, 0.14);
     }
 
-    .pulse-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--blue-light);
-      box-shadow: 0 0 8px var(--blue-light);
-      animation: pulse-dot 2s infinite ease-in-out;
+    /* Slot reservado para a Logo */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 14px;
+      min-height: 48px;
     }
 
-    @keyframes pulse-dot {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.35; transform: scale(0.8); }
+    .logo-img {
+      max-width: 170px;
+      max-height: 58px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
     }
 
+    /* Foto de Perfil com aro azul */
     .profile-area {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 18px;
+      margin-bottom: 12px;
     }
 
     .profile-ring {
-      width: 104px;
-      height: 104px;
+      width: 90px;
+      height: 90px;
       border-radius: 50%;
-      padding: 3px;
-      background: var(--blue-gradient);
-      box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
-      margin-bottom: 14px;
+      padding: 2.5px;
+      background: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #1e40af 100%);
+      box-shadow: 0 0 24px rgba(56, 189, 248, 0.32);
+      margin-bottom: 12px;
       position: relative;
     }
 
@@ -182,103 +160,85 @@
 
     .profile-badge-verified {
       position: absolute;
-      bottom: 2px;
-      right: 2px;
-      background: #000;
+      bottom: 0px;
+      right: 0px;
+      background: #07090e;
       border-radius: 50%;
-      width: 26px;
-      height: 26px;
+      width: 24px;
+      height: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
       border: 1.5px solid var(--blue-light);
     }
 
     .profile-badge-verified svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       fill: var(--blue-light);
     }
 
     .sub-brand {
-      font-size: 11.5px;
-      font-weight: 600;
-      letter-spacing: 2.2px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.8px;
       text-transform: uppercase;
       color: var(--blue-light);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
 
+    /* Título: "Catálogo de Black Friday" somente branco */
     .main-title {
-      font-size: 28px;
+      font-size: 23px;
       font-weight: 700;
       line-height: 1.25;
       color: #ffffff;
-      margin-bottom: 8px;
-      letter-spacing: -0.5px;
-    }
-
-    .main-title .gradient-text {
-      background: var(--blue-gradient);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: inline-block;
+      margin-bottom: 6px;
+      letter-spacing: -0.3px;
     }
 
     .clinic-subtitle {
-      font-size: 14px;
+      font-size: 13px;
       color: var(--text-muted);
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      max-width: 520px;
-      margin: 0 auto;
-      line-height: 1.5;
+      font-weight: 300;
+      line-height: 1.45;
     }
 
-    /* === CONTROLE DE CATEGORIAS (TABS / FILTRO) === */
+    /* === FILTROS DE CATEGORIA (MOBILE TABS) === */
     .filter-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
-      margin: 22px 0 26px;
-      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
     }
 
     .filter-btn {
-      background: rgba(18, 25, 41, 0.7);
+      background: rgba(19, 26, 42, 0.6);
       border: 1px solid rgba(56, 189, 248, 0.18);
       color: var(--text-muted);
-      padding: 10px 20px;
+      padding: 8px 16px;
       border-radius: 999px;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 500;
       cursor: pointer;
       display: inline-flex;
       align-items: center;
-      gap: 8px;
-      transition: all 0.25s ease;
-      backdrop-filter: blur(8px);
-    }
-
-    .filter-btn:hover {
-      border-color: rgba(56, 189, 248, 0.4);
-      color: #ffffff;
-      transform: translateY(-1px);
+      gap: 6px;
+      transition: all 0.2s ease;
     }
 
     .filter-btn.active {
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.24) 0%, rgba(2, 132, 199, 0.35) 100%);
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.22) 0%, rgba(2, 132, 199, 0.32) 100%);
       border-color: var(--blue-light);
       color: #ffffff;
       font-weight: 600;
-      box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.2);
     }
 
     .filter-count {
       font-size: 11px;
-      padding: 2px 7px;
+      padding: 1px 6px;
       border-radius: 999px;
       background: rgba(255, 255, 255, 0.08);
       color: var(--blue-light);
@@ -289,55 +249,51 @@
       color: #ffffff;
     }
 
-    /* === GRUPO / SEÇÃO DE OBJETIVO === */
+    /* === SEÇÕES DE CATEGORIA === */
     .section-category {
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
 
     .category-header {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 14px;
-      padding-left: 4px;
-    }
-
-    .category-icon-box {
-      width: 32px;
-      height: 32px;
-      border-radius: 10px;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--blue-light);
-    }
-
-    .category-icon-box svg {
-      width: 17px;
-      height: 17px;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      padding: 0 2px;
     }
 
     .category-title {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
       color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-title::before {
+      content: "";
+      width: 3px;
+      height: 14px;
+      background: var(--blue-light);
+      border-radius: 2px;
+      display: inline-block;
     }
 
     .category-count {
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--blue-light);
       font-weight: 500;
+      margin-left: auto;
     }
 
-    /* === ACORDEÕES DOS PROCEDIMENTOS === */
+    /* === ACORDEÕES === */
     .accordion-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
 
     .accordion-item {
@@ -345,28 +301,27 @@
       border: 1px solid var(--card-border);
       border-radius: var(--radius-md);
       overflow: hidden;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
-      backdrop-filter: blur(16px);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+      backdrop-filter: blur(14px);
     }
 
     .accordion-item:hover {
       border-color: var(--card-border-hover);
-      box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.6), 0 0 16px rgba(56, 189, 248, 0.1);
     }
 
     .accordion-item.active {
-      border-color: rgba(56, 189, 248, 0.5);
-      box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.75), 0 0 22px rgba(56, 189, 248, 0.16);
+      border-color: rgba(56, 189, 248, 0.45);
+      box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.8), 0 0 18px rgba(56, 189, 248, 0.12);
     }
 
-    /* Cabeçalho do Acordeão */
+    /* Cabeçalho do Acordeão (Clean, sem etiquetas azuis) */
     .accordion-header {
       width: 100%;
-      padding: 18px 20px;
+      padding: 15px 16px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      gap: 12px;
       cursor: pointer;
       user-select: none;
       background: transparent;
@@ -376,42 +331,23 @@
     }
 
     .accordion-header-left {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
       flex: 1;
+      padding-right: 6px;
     }
 
-    .procedure-badge-row {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .procedure-tag {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: rgba(56, 189, 248, 0.10);
-      color: var(--blue-light);
-      border: 1px solid rgba(56, 189, 248, 0.25);
-    }
-
+    /* Somente o nome limpo do procedimento */
     .procedure-name {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
       color: #ffffff;
-      letter-spacing: -0.2px;
       line-height: 1.35;
+      letter-spacing: -0.2px;
     }
 
     .accordion-header-right {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
       flex-shrink: 0;
     }
 
@@ -420,7 +356,7 @@
     }
 
     .header-price-val {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 700;
       color: var(--blue-light);
       letter-spacing: -0.3px;
@@ -428,14 +364,14 @@
     }
 
     .header-price-term {
-      font-size: 11px;
+      font-size: 10.5px;
       color: var(--text-muted);
       display: block;
     }
 
     .chevron-box {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -448,8 +384,8 @@
     }
 
     .chevron-box svg {
-      width: 16px;
-      height: 16px;
+      width: 14px;
+      height: 14px;
       transition: transform 0.3s ease;
     }
 
@@ -459,7 +395,7 @@
       transform: rotate(180deg);
     }
 
-    /* Conteúdo Expandido do Acordeão */
+    /* Conteúdo Expandido (Estrutura 100% Vertical Mobile) */
     .accordion-content {
       max-height: 0;
       overflow: hidden;
@@ -473,43 +409,31 @@
       border-top-color: rgba(56, 189, 248, 0.12);
     }
 
-    .accordion-body-grid {
-      padding: 22px 20px 24px;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 24px;
-      align-items: start;
+    .accordion-body-mobile {
+      padding: 16px 16px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
 
-    /* === BOX PADRONIZADA DE ANTES E DEPOIS === */
-    .before-after-wrapper {
-      width: 100%;
-    }
-
+    /* === BOX PADRONIZADA ANTES E DEPOIS === */
     .before-after-box {
       width: 100%;
       aspect-ratio: 4 / 3;
-      border-radius: 14px;
-      background: linear-gradient(145deg, #0a0e18 0%, #101726 100%);
-      border: 1px dashed rgba(56, 189, 248, 0.32);
+      border-radius: 12px;
+      background: linear-gradient(145deg, #090d16 0%, #0e1524 100%);
+      border: 1px dashed rgba(56, 189, 248, 0.3);
       position: relative;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 16px;
+      padding: 14px;
       text-align: center;
       box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .before-after-box:hover {
-      border-color: var(--blue-light);
-      box-shadow: inset 0 2px 14px rgba(0, 0, 0, 0.7), 0 0 14px rgba(56, 189, 248, 0.12);
-    }
-
-    /* Quando a imagem for inserida, ocupa todo o box com corte perfeito */
     .procedure-photo {
       position: absolute;
       top: 0;
@@ -518,28 +442,27 @@
       height: 100%;
       object-fit: cover;
       display: block;
-      border-radius: 13px;
+      border-radius: 11px;
       z-index: 2;
     }
 
-    /* Placeholder elegante enquanto não envia a foto */
     .photo-placeholder {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 7px;
+      gap: 6px;
       z-index: 1;
     }
 
     .placeholder-badge {
-      font-size: 10px;
+      font-size: 9.5px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
-      background: rgba(56, 189, 248, 0.15);
-      border: 1px solid rgba(56, 189, 248, 0.35);
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.3);
       color: var(--blue-light);
-      padding: 4px 10px;
+      padding: 3px 8px;
       border-radius: 999px;
       display: inline-flex;
       align-items: center;
@@ -554,54 +477,53 @@
     }
 
     .placeholder-icon {
-      width: 38px;
-      height: 38px;
+      width: 34px;
+      height: 34px;
       color: rgba(56, 189, 248, 0.65);
-      margin: 4px 0 2px;
+      margin: 2px 0;
     }
 
     .placeholder-title {
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 600;
       color: #ffffff;
-      letter-spacing: -0.2px;
     }
 
     .placeholder-desc {
-      font-size: 11.5px;
+      font-size: 11px;
       color: var(--text-muted);
       max-width: 220px;
-      line-height: 1.4;
+      line-height: 1.35;
       font-weight: 300;
     }
 
-    /* === DETALHES DO PROCEDIMENTO (COLUNA DIREITA) === */
+    /* === DETALHES DO PROCEDIMENTO === */
     .procedure-details {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
     }
 
     .detail-block-title {
       font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-weight: 600;
+      letter-spacing: 0.9px;
       text-transform: uppercase;
       color: var(--blue-light);
-      margin-bottom: 5px;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
       gap: 6px;
     }
 
     .detail-block-title svg {
-      width: 14px;
-      height: 14px;
+      width: 13px;
+      height: 13px;
     }
 
     .procedure-description {
-      font-size: 13.5px;
-      line-height: 1.6;
+      font-size: 13px;
+      line-height: 1.55;
       color: #e2e8f0;
       font-weight: 300;
     }
@@ -609,36 +531,36 @@
     .indications-list {
       display: flex;
       flex-direction: column;
-      gap: 7px;
+      gap: 6px;
     }
 
     .indication-item {
       display: flex;
       align-items: flex-start;
-      gap: 8px;
-      font-size: 12.5px;
+      gap: 7px;
+      font-size: 12px;
       color: #cbd5e1;
-      line-height: 1.45;
+      line-height: 1.4;
+      font-weight: 300;
     }
 
     .indication-check {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
       color: var(--blue-light);
       flex-shrink: 0;
       margin-top: 2px;
     }
 
-    /* === CARD DE PREÇO EM DESTAQUE === */
+    /* === CARD DE PREÇO (CLEAN: SEM ETIQUETAS "OFERTA BLACK FRIDAY" OU "AGENDA NOVEMBRO") === */
     .price-card-highlight {
       background: linear-gradient(145deg, rgba(14, 21, 35, 0.95) 0%, rgba(8, 12, 22, 0.95) 100%);
-      border: 1px solid rgba(56, 189, 248, 0.28);
+      border: 1px solid rgba(56, 189, 248, 0.25);
       border-radius: var(--radius-md);
-      padding: 16px 18px;
+      padding: 16px;
       position: relative;
       overflow: hidden;
-      box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(56, 189, 248, 0.05);
-      margin-top: 4px;
+      box-shadow: 0 6px 20px -4px rgba(0, 0, 0, 0.5);
     }
 
     .price-card-highlight::before {
@@ -646,40 +568,17 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 4px;
+      width: 3.5px;
       height: 100%;
       background: var(--blue-light);
-      box-shadow: 0 0 10px var(--blue-light);
-    }
-
-    .price-header-label {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-
-    .price-black-badge {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.9px;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: #0284c7;
-      padding: 3px 8px;
-      border-radius: 4px;
-    }
-
-    .price-limited-note {
-      font-size: 11px;
-      color: var(--text-muted);
+      box-shadow: 0 0 8px var(--blue-light);
     }
 
     .price-main-value {
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
       color: #ffffff;
-      letter-spacing: -0.5px;
+      letter-spacing: -0.4px;
       line-height: 1.1;
       display: flex;
       align-items: baseline;
@@ -687,14 +586,14 @@
     }
 
     .price-main-value .cash-tag {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 500;
       color: var(--blue-light);
-      letter-spacing: 0.3px;
+      letter-spacing: 0.2px;
     }
 
     .price-installment-value {
-      font-size: 13.5px;
+      font-size: 13px;
       color: #94a3b8;
       margin-top: 4px;
       font-weight: 400;
@@ -705,18 +604,17 @@
       font-weight: 600;
     }
 
-    /* Botão de ação por procedimento */
+    /* Botão de Agendamento por Procedimento */
     .btn-procedure-action {
-      margin-top: 14px;
+      margin-top: 12px;
       width: 100%;
       background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
-      border: 1px solid rgba(56, 189, 248, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.35);
       color: #ffffff;
       text-decoration: none;
       font-size: 13px;
       font-weight: 600;
-      letter-spacing: 0.3px;
-      padding: 12px 16px;
+      padding: 12px 14px;
       border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
@@ -724,46 +622,44 @@
       gap: 8px;
       cursor: pointer;
       transition: all 0.2s ease;
-      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.25);
     }
 
-    .btn-procedure-action:hover {
-      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
-      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
-      transform: translateY(-1px);
+    .btn-procedure-action:active {
+      transform: scale(0.98);
+      filter: brightness(0.95);
     }
 
     .btn-procedure-action svg {
-      width: 16px;
-      height: 16px;
+      width: 15px;
+      height: 15px;
       fill: currentColor;
     }
 
     /* === BOTÃO DE ATENDIMENTO FLUTUANTE (WHATSAPP COM VIBRAÇÃO & EXIT-INTENT) === */
     .support-floating-wrapper {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
+      bottom: 18px;
+      right: 14px;
       z-index: 9999;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 10px;
+      gap: 8px;
     }
 
-    /* Tooltip / Balão de Atendimento */
     .support-tooltip {
       background: rgba(13, 19, 32, 0.96);
       border: 1px solid rgba(56, 189, 248, 0.35);
-      border-radius: 16px;
-      padding: 12px 16px;
-      max-width: 280px;
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 0 0 20px rgba(56, 189, 248, 0.2);
-      backdrop-filter: blur(16px);
+      border-radius: 14px;
+      padding: 10px 14px;
+      max-width: 250px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.75), 0 0 16px rgba(56, 189, 248, 0.15);
+      backdrop-filter: blur(14px);
       opacity: 0;
-      transform: translateY(12px) scale(0.92);
+      transform: translateY(10px) scale(0.92);
       pointer-events: none;
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
     }
 
@@ -776,10 +672,10 @@
     .support-tooltip::after {
       content: "";
       position: absolute;
-      bottom: -6px;
-      right: 26px;
-      width: 12px;
-      height: 12px;
+      bottom: -5px;
+      right: 22px;
+      width: 10px;
+      height: 10px;
       background: rgba(13, 19, 32, 0.96);
       border-right: 1px solid rgba(56, 189, 248, 0.35);
       border-bottom: 1px solid rgba(56, 189, 248, 0.35);
@@ -790,24 +686,24 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
 
     .tooltip-title {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 700;
       color: #ffffff;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
     .tooltip-title-dot {
-      width: 6px;
-      height: 6px;
+      width: 5px;
+      height: 5px;
       border-radius: 50%;
       background: var(--wp-green);
-      box-shadow: 0 0 6px var(--wp-green);
+      box-shadow: 0 0 5px var(--wp-green);
     }
 
     .tooltip-close {
@@ -821,36 +717,34 @@
     }
 
     .tooltip-text {
-      font-size: 12px;
+      font-size: 11.5px;
       color: #cbd5e1;
-      line-height: 1.45;
+      line-height: 1.4;
       font-weight: 300;
     }
 
-    /* Botão Flutuante Principal */
     .support-btn-pill {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
       color: #ffffff;
       text-decoration: none;
-      padding: 12px 20px 12px 14px;
+      padding: 10px 16px 10px 12px;
       border-radius: 999px;
-      box-shadow: 0 10px 28px -4px rgba(37, 211, 102, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 24px -4px rgba(37, 211, 102, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
       cursor: pointer;
       transition: all 0.25s ease;
-      position: relative;
     }
 
-    .support-btn-pill:hover {
-      transform: scale(1.04);
-      box-shadow: 0 12px 34px -4px rgba(37, 211, 102, 0.7), 0 0 18px rgba(37, 211, 102, 0.4);
+    .support-btn-pill:hover,
+    .support-btn-pill:active {
+      transform: scale(1.03);
     }
 
     .support-btn-icon {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
       background: rgba(255, 255, 255, 0.2);
       border-radius: 50%;
       display: flex;
@@ -860,8 +754,8 @@
     }
 
     .support-btn-icon svg {
-      width: 18px;
-      height: 18px;
+      width: 16px;
+      height: 16px;
       fill: #ffffff;
     }
 
@@ -872,42 +766,41 @@
     }
 
     .support-text-main {
-      font-size: 13.5px;
+      font-size: 12.5px;
       font-weight: 700;
       color: #ffffff;
       line-height: 1.2;
     }
 
     .support-text-sub {
-      font-size: 10.5px;
+      font-size: 10px;
       color: rgba(255, 255, 255, 0.85);
       font-weight: 400;
     }
 
-    /* Animação de Vibração / Chamar Atenção ao Tentar Sair */
     @keyframes shake-vibrate {
       0%, 100% { transform: translateX(0) scale(1); }
-      15% { transform: translateX(-8px) rotate(-3deg) scale(1.05); }
-      30% { transform: translateX(8px) rotate(3deg) scale(1.05); }
-      45% { transform: translateX(-6px) rotate(-2deg) scale(1.05); }
-      60% { transform: translateX(6px) rotate(2deg) scale(1.05); }
-      75% { transform: translateX(-3px) rotate(-1deg) scale(1.02); }
-      90% { transform: translateX(3px) rotate(1deg) scale(1.02); }
+      15% { transform: translateX(-6px) rotate(-3deg) scale(1.04); }
+      30% { transform: translateX(6px) rotate(3deg) scale(1.04); }
+      45% { transform: translateX(-4px) rotate(-2deg) scale(1.04); }
+      60% { transform: translateX(4px) rotate(2deg) scale(1.04); }
+      75% { transform: translateX(-2px) rotate(-1deg) scale(1.02); }
+      90% { transform: translateX(2px) rotate(1deg) scale(1.02); }
     }
 
     .support-btn-pill.vibrating {
       animation: shake-vibrate 0.8s ease-in-out infinite;
-      box-shadow: 0 0 25px rgba(37, 211, 102, 0.85), 0 0 45px rgba(56, 189, 248, 0.5);
+      box-shadow: 0 0 25px rgba(37, 211, 102, 0.85), 0 0 35px rgba(56, 189, 248, 0.5);
     }
 
-    /* Modal de Intenção de Saída (Exit Intent Banner) */
+    /* Modal de Intenção de Saída */
     .exit-modal-backdrop {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.82);
       backdrop-filter: blur(8px);
       z-index: 99999;
       display: flex;
@@ -928,29 +821,23 @@
       background: var(--card-bg);
       border: 1px solid var(--blue-light);
       border-radius: var(--radius-lg);
-      padding: 30px 24px;
-      max-width: 440px;
+      padding: 24px 20px;
+      max-width: 360px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.3);
-      transform: translateY(20px) scale(0.95);
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(56, 189, 248, 0.25);
       position: relative;
-    }
-
-    .exit-modal-backdrop.show .exit-modal-card {
-      transform: translateY(0) scale(1);
     }
 
     .exit-close-btn {
       position: absolute;
-      top: 14px;
-      right: 16px;
+      top: 12px;
+      right: 14px;
       background: rgba(255, 255, 255, 0.08);
       border: none;
       color: #cbd5e1;
-      width: 28px;
-      height: 28px;
+      width: 26px;
+      height: 26px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -959,92 +846,35 @@
       font-size: 14px;
     }
 
-    .exit-modal-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(56, 189, 248, 0.15);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: var(--blue-light);
-      padding: 4px 12px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 14px;
-    }
-
     .exit-modal-title {
-      font-size: 21px;
+      font-size: 18px;
       font-weight: 700;
       color: #ffffff;
       margin-bottom: 8px;
       line-height: 1.3;
+      padding-top: 6px;
     }
 
     .exit-modal-desc {
-      font-size: 13.5px;
+      font-size: 12.5px;
       color: var(--text-muted);
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       font-weight: 300;
     }
 
-    /* Footer discreto */
+    /* Rodapé */
     .catalog-footer {
       text-align: center;
-      margin-top: 36px;
-      padding-top: 24px;
+      margin-top: 28px;
+      padding-top: 20px;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 12px;
+      font-size: 11.5px;
       color: var(--text-dim);
     }
 
     .catalog-footer strong {
       color: var(--text-muted);
-    }
-
-    /* === RESPONSIVIDADE === */
-    @media (max-width: 768px) {
-      .header-card {
-        padding: 24px 18px 22px;
-      }
-      .main-title {
-        font-size: 23px;
-      }
-      .accordion-header {
-        padding: 16px;
-      }
-      .procedure-name {
-        font-size: 15px;
-      }
-      .header-price-val {
-        font-size: 15px;
-      }
-      .accordion-body-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-        padding: 18px 16px 20px;
-      }
-      .before-after-box {
-        max-width: 100%;
-        aspect-ratio: 16 / 10;
-      }
-      .support-floating-wrapper {
-        bottom: 16px;
-        right: 16px;
-      }
-      .support-btn-pill {
-        padding: 10px 16px 10px 12px;
-      }
-      .support-text-main {
-        font-size: 12.5px;
-      }
-      .support-tooltip {
-        max-width: 250px;
-        right: 0;
-      }
     }
   </style>
 </head>
@@ -1054,9 +884,10 @@
 
     <!-- === CABEÇALHO DO CATÁLOGO === -->
     <header class="header-card">
-      <div class="badge-top">
-        <span class="pulse-dot"></span>
-        <span>Condições Exclusivas • Nov/26</span>
+
+      <!-- Slot para a Logo Oficial da Luciane Lima (será carregada se existir assets/logo.png) -->
+      <div class="logo-container" id="logo-slot">
+        <img src="assets/logo.png" alt="Luciane Lima" class="logo-img" onerror="this.parentElement.style.display='none'">
       </div>
 
       <div class="profile-area">
@@ -1069,15 +900,14 @@
           </div>
         </div>
         <div class="sub-brand">Luciane Lima Estética Avançada</div>
-        <h1 class="main-title">
-          Catálogo <span class="gradient-text">Black Friday</span>
-        </h1>
+        <!-- Nome somente em branco -->
+        <h1 class="main-title">Catálogo de Black Friday</h1>
         <p class="clinic-subtitle">
-          Condições e pacotes especiais de Black Friday com vagas limitadas para a agenda de novembro de 2026. Selecione um procedimento para visualizar indicações, valores e resultados.
+          Condições exclusivas para você agendar seus procedimentos. Toque no procedimento para ver detalhes, fotos e valores.
         </p>
       </div>
 
-      <!-- FILTRO DE CATEGORIAS -->
+      <!-- FILTRO DE CATEGORIAS (MOBILE) -->
       <div class="filter-wrapper" role="tablist">
         <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
           <span>Todos</span>
@@ -1097,14 +927,8 @@
     <!-- === SEÇÃO: PROCEDIMENTOS FACIAIS === -->
     <section class="section-category" data-category="facial">
       <div class="category-header">
-        <div class="category-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2a8 8 0 0 0-8 8c0 4.418 3.582 8 8 8s8-3.582 8-8a8 8 0 0 0-8-8z"/>
-            <path d="M9 10h.01M15 10h.01M9.5 14.5c.8 1 2.2 1 3 0"/>
-          </svg>
-        </div>
         <h2 class="category-title">Procedimentos Faciais</h2>
-        <span class="category-count">7 protocolos</span>
+        <span class="category-count">7 opções</span>
       </div>
 
       <div class="accordion-list">
@@ -1113,9 +937,6 @@
         <article class="accordion-item" id="item-botox" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Alta Procura</span>
-              </div>
               <h3 class="procedure-name">Botox (Toxina Botulínica)</h3>
             </div>
             <div class="accordion-header-right">
@@ -1132,25 +953,22 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
+            <div class="accordion-body-mobile">
               <!-- BOX PADRONIZADA ANTES & DEPOIS -->
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-botox">
-                  <!-- Inserir imagem: assets/antes-depois-botox.jpg -->
-                  <img src="" alt="Antes e Depois - Botox" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
-                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                      <circle cx="12" cy="13" r="4"/>
-                    </svg>
-                    <span class="placeholder-title">Resultado Clínico</span>
-                    <span class="placeholder-desc">Espaço reservado para o antes e depois do Botox.</span>
-                  </div>
+              <div class="before-after-box" id="box-botox">
+                <img src="" alt="Antes e Depois - Botox" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                    <circle cx="12" cy="13" r="4"/>
+                  </svg>
+                  <span class="placeholder-title">Resultado Clínico</span>
+                  <span class="placeholder-desc">Espaço reservado para o antes e depois do Botox.</span>
                 </div>
               </div>
 
-              <!-- DETALHES E PREÇO -->
+              <!-- DETALHES -->
               <div class="procedure-details">
                 <div>
                   <div class="detail-block-title">
@@ -1183,11 +1001,8 @@
                   </div>
                 </div>
 
+                <!-- CARD DE PREÇO CLEAN -->
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 599,90 <span class="cash-tag">à vista</span>
                   </div>
@@ -1209,9 +1024,6 @@
         <article class="accordion-item" id="item-bioestimulador" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Rejuvenescimento</span>
-              </div>
               <h3 class="procedure-name">Bioestimulador de Colágeno</h3>
             </div>
             <div class="accordion-header-right">
@@ -1228,16 +1040,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-bioestimulador">
-                  <img src="" alt="Antes e Depois - Bioestimulador de Colágeno" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Firmeza e Densidade</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado do Bioestimulador.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-bioestimulador">
+                <img src="" alt="Antes e Depois - Bioestimulador de Colágeno" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Firmeza e Densidade</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado do Bioestimulador.</span>
                 </div>
               </div>
 
@@ -1274,10 +1084,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 999,90 <span class="cash-tag">à vista</span>
                   </div>
@@ -1299,9 +1105,6 @@
         <article class="accordion-item" id="item-preenchimento" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Harmonização</span>
-              </div>
               <h3 class="procedure-name">Preenchimento com Ácido Hialurônico (o ml)</h3>
             </div>
             <div class="accordion-header-right">
@@ -1318,16 +1121,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-preenchimento">
-                  <img src="" alt="Antes e Depois - Preenchimento" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Contorno e Volume</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-preenchimento">
+                <img src="" alt="Antes e Depois - Preenchimento" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Contorno e Volume</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento.</span>
                 </div>
               </div>
 
@@ -1364,10 +1165,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Valor por ml • Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 749,90 <span class="cash-tag">o ml à vista</span>
                   </div>
@@ -1389,10 +1186,7 @@
         <article class="accordion-item" id="item-cicatriz-acne" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Pacote Premium</span>
-              </div>
-              <h3 class="procedure-name">Tratamento Cicatriz de Acne c/ Radiofrequência Microagulhada</h3>
+              <h3 class="procedure-name">Tratamento Cicatriz de Acne com Radiofrequência Microagulhada</h3>
             </div>
             <div class="accordion-header-right">
               <div class="header-price-preview">
@@ -1408,16 +1202,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-cicatriz-acne">
-                  <img src="" alt="Antes e Depois - Cicatriz de Acne com Radiofrequência" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Remodelação Dérmica</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado das 3 sessões.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-cicatriz-acne">
+                <img src="" alt="Antes e Depois - Cicatriz de Acne com Radiofrequência" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Remodelação Dérmica</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado das 3 sessões.</span>
                 </div>
               </div>
 
@@ -1428,7 +1220,7 @@
                     Sobre o Tratamento (Pacote com 3 Sessões)
                   </div>
                   <p class="procedure-description">
-                    Combinação tecnológica da indução mecânica de microagulhas de ouro com a emissão profunda de calor térmico por radiofrequência, quebrando a fibrose das cicatrizes e renovando a derme.
+                    Combinação tecnológica da indução mecânica de microagulhas com a emissão profunda de calor térmico por radiofrequência, quebrando a fibrose das cicatrizes e renovando a derme.
                   </p>
                 </div>
 
@@ -1440,7 +1232,7 @@
                   <div class="indications-list">
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>Cicatrizes atróficas e sequelas profundas de acne (ice pick, boxcar e rolling)</span>
+                      <span>Cicatrizes atróficas e sequelas de acne</span>
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -1454,10 +1246,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Pacote 3 Sessões • Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 1.399,90 <span class="cash-tag">à vista (3 sessões)</span>
                   </div>
@@ -1466,7 +1254,7 @@
                   </div>
 
                   <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Tratamento Cicatriz de Acne com Radiofrequência Microagulhada (3 Sessões)', 'R$ 1.399,90 à vista ou 12x de R$ 139,90'); return false;">
-                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
                     Quero o Tratamento de Acne (3 Sessões)
                   </a>
                 </div>
@@ -1479,10 +1267,7 @@
         <article class="accordion-item" id="item-microagulhamento" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Renovação</span>
-              </div>
-              <h3 class="procedure-name">Microagulhamento com Drug Delivery</h3>
+              <h3 class="procedure-name">Microagulhamento</h3>
             </div>
             <div class="accordion-header-right">
               <div class="header-price-preview">
@@ -1498,16 +1283,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-microagulhamento">
-                  <img src="" alt="Antes e Depois - Microagulhamento" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Textura e Poros</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado do Microagulhamento.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-microagulhamento">
+                <img src="" alt="Antes e Depois - Microagulhamento" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Textura e Poros</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado do Microagulhamento.</span>
                 </div>
               </div>
 
@@ -1544,10 +1327,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 229,90 <span class="cash-tag">à vista</span>
                   </div>
@@ -1569,9 +1348,6 @@
         <article class="accordion-item" id="item-dermaplaning" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Glow Imediato</span>
-              </div>
               <h3 class="procedure-name">Limpeza de Pele com Dermaplaning</h3>
             </div>
             <div class="accordion-header-right">
@@ -1588,16 +1364,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-dermaplaning">
-                  <img src="" alt="Antes e Depois - Limpeza de Pele com Dermaplaning" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Pele de Porcelana</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado com Dermaplaning.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-dermaplaning">
+                <img src="" alt="Antes e Depois - Limpeza de Pele com Dermaplaning" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Pele de Porcelana</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado com Dermaplaning.</span>
                 </div>
               </div>
 
@@ -1608,7 +1382,7 @@
                     Sobre o Tratamento
                   </div>
                   <p class="procedure-description">
-                    Limpeza profunda com extração rigorosa aliada ao dermaplaning (esfoliação física precisa com lâmina dermatológica), removendo células mortas e a penugem facial (lanugem).
+                    Limpeza profunda com extração rigorosa aliada ao dermaplaning (esfoliação física precisa com lâmina dermatológica), removendo células mortas e a penugem facial.
                   </p>
                 </div>
 
@@ -1634,10 +1408,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 180,00 <span class="cash-tag">à vista</span>
                   </div>
@@ -1659,9 +1429,6 @@
         <article class="accordion-item" id="item-peeling" data-category="facial">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Facial • Higienização & Peeling</span>
-              </div>
               <h3 class="procedure-name">Limpeza de Pele com Peeling</h3>
             </div>
             <div class="accordion-header-right">
@@ -1678,16 +1445,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-peeling">
-                  <img src="" alt="Antes e Depois - Limpeza de Pele com Peeling" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Pele Limpa e Renovada</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado da Limpeza com Peeling.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-peeling">
+                <img src="" alt="Antes e Depois - Limpeza de Pele com Peeling" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Pele Limpa e Renovada</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado da Limpeza com Peeling.</span>
                 </div>
               </div>
 
@@ -1714,7 +1479,7 @@
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>Uniformização da tonalidade e clareamento de manchinhas leves</span>
+                      <span>Uniformização da tonalidade e clareamento de manchinhas</span>
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -1724,10 +1489,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Agenda Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 159,90 <span class="cash-tag">à vista</span>
                   </div>
@@ -1751,14 +1512,8 @@
     <!-- === SEÇÃO: PROCEDIMENTOS CORPORAIS === -->
     <section class="section-category" data-category="corporal">
       <div class="category-header">
-        <div class="category-icon-box">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 3a4 4 0 0 1 4 4c0 2-2 4-4 4s-4-2-4-4a4 4 0 0 1 4-4z"/>
-            <path d="M6 21v-2a6 6 0 0 1 12 0v2"/>
-          </svg>
-        </div>
         <h2 class="category-title">Procedimentos Corporais</h2>
-        <span class="category-count">2 protocolos</span>
+        <span class="category-count">2 opções</span>
       </div>
 
       <div class="accordion-list">
@@ -1767,9 +1522,6 @@
         <article class="accordion-item" id="item-gluteo" data-category="corporal">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Corporal • Contorno Glúteo</span>
-              </div>
               <h3 class="procedure-name">Preenchimento Glúteo 20ml</h3>
             </div>
             <div class="accordion-header-right">
@@ -1786,16 +1538,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-gluteo">
-                  <img src="" alt="Antes e Depois - Preenchimento Glúteo 20ml" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Contorno e Volume</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento Glúteo.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-gluteo">
+                <img src="" alt="Antes e Depois - Preenchimento Glúteo 20ml" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Contorno e Volume</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento Glúteo.</span>
                 </div>
               </div>
 
@@ -1822,7 +1572,7 @@
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>Aumento sutil e projeção do polo superior</span>
+                      <span>Aumento sutil e projeção do contorno</span>
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -1832,10 +1582,6 @@
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Pacote 20ml • Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 3.299,90 <span class="cash-tag">à vista</span>
                   </div>
@@ -1857,9 +1603,6 @@
         <article class="accordion-item" id="item-criolipolise" data-category="corporal">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <div class="procedure-badge-row">
-                <span class="procedure-tag">Corporal • Gordura Localizada</span>
-              </div>
               <h3 class="procedure-name">Criolipólise (por região)</h3>
             </div>
             <div class="accordion-header-right">
@@ -1876,16 +1619,14 @@
           </button>
 
           <div class="accordion-content">
-            <div class="accordion-body-grid">
-              <div class="before-after-wrapper">
-                <div class="before-after-box" id="box-criolipolise">
-                  <img src="" alt="Antes e Depois - Criolipólise" class="procedure-photo" onerror="this.style.display='none'">
-                  <div class="photo-placeholder">
-                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
-                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                    <span class="placeholder-title">Redução de Medidas</span>
-                    <span class="placeholder-desc">Espaço reservado para o resultado da Criolipólise.</span>
-                  </div>
+            <div class="accordion-body-mobile">
+              <div class="before-after-box" id="box-criolipolise">
+                <img src="" alt="Antes e Depois - Criolipólise" class="procedure-photo" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                  <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                  <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  <span class="placeholder-title">Redução de Medidas</span>
+                  <span class="placeholder-desc">Espaço reservado para o resultado da Criolipólise.</span>
                 </div>
               </div>
 
@@ -1912,20 +1653,16 @@
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>Flancos ("pneuzinhos"), culote, braços e gordurinha do sutiã</span>
+                      <span>Flancos, culote, braços e gordurinha do sutiã</span>
                     </div>
                     <div class="indication-item">
                       <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                      <span>Redução de até 25% a 30% da camada de gordura na região tratada</span>
+                      <span>Redução da camada de gordura na região tratada</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="price-card-highlight">
-                  <div class="price-header-label">
-                    <span class="price-black-badge">Oferta Black Friday</span>
-                    <span class="price-limited-note">Por Região • Nov/26</span>
-                  </div>
                   <div class="price-main-value">
                     R$ 249,90 <span class="cash-tag">à vista por região</span>
                   </div>
@@ -1948,29 +1685,27 @@
 
     <!-- FOOTER DO CATÁLOGO -->
     <footer class="catalog-footer">
-      <p><strong>Luciane Lima Estética Avançada</strong> • Black Friday 2026</p>
-      <p style="margin-top: 4px;">Valores e condições válidos para atendimentos e reservas de novembro de 2026.</p>
+      <p><strong>Luciane Lima Estética Avançada</strong></p>
+      <p style="margin-top: 4px;">Catálogo exclusivo para agendamentos online.</p>
     </footer>
 
   </div>
 
   <!-- === BOTÃO DE ATENDIMENTO FLUTUANTE (WHATSAPP COM VIBRAÇÃO & EXIT INTENT) === -->
   <div class="support-floating-wrapper">
-    <!-- Balão de Ajuda / Atendimento -->
     <div id="support-tooltip" class="support-tooltip">
       <div class="tooltip-header">
         <div class="tooltip-title">
           <span class="tooltip-title-dot"></span>
-          Atendimento Luciane Lima
+          Atendimento Online
         </div>
         <button class="tooltip-close" onclick="closeSupportTooltip()" aria-label="Fechar">&times;</button>
       </div>
       <p class="tooltip-text">
-        Ficou com dúvida sobre qual procedimento é ideal para o seu objetivo? Fale comigo agora pelo WhatsApp!
+        Ficou com dúvida sobre qual procedimento escolher? Fale comigo agora no WhatsApp!
       </p>
     </div>
 
-    <!-- Botão Flutuante -->
     <a id="floating-support-btn" href="#" class="support-btn-pill" onclick="openWhatsAppGeneral(); return false;" title="Precisa de ajuda? Me chame">
       <div class="support-btn-icon">
         <svg viewBox="0 0 24 24">
@@ -1979,7 +1714,7 @@
       </div>
       <div class="support-btn-text">
         <span class="support-text-main">Precisa de ajuda? Me chame</span>
-        <span class="support-text-sub">Atendimento Online • WhatsApp</span>
+        <span class="support-text-sub">Atendimento WhatsApp</span>
       </div>
     </a>
   </div>
@@ -1988,10 +1723,9 @@
   <div id="exit-modal" class="exit-modal-backdrop">
     <div class="exit-modal-card">
       <button class="exit-close-btn" onclick="closeExitModal()">&times;</button>
-      <div class="exit-modal-badge">Espere um momento</div>
-      <h3 class="exit-modal-title">Antes de ir embora... Ficou com alguma dúvida?</h3>
+      <h3 class="exit-modal-title">Antes de sair... Ficou com alguma dúvida?</h3>
       <p class="exit-modal-desc">
-        As vagas com preços de Black Friday são limitadas para a agenda de novembro. Converse diretamente com a equipe para garantir a sua vaga ou tirar dúvidas sobre o melhor protocolo.
+        Nossas vagas promocionais são limitadas. Converse com nossa equipe agora no WhatsApp para tirar dúvidas sobre o procedimento ideal para você.
       </p>
       <a href="#" class="support-btn-pill" style="width: 100%; justify-content: center;" onclick="openWhatsAppGeneral('Dúvida antes de sair do catálogo'); closeExitModal(); return false;">
         <div class="support-btn-icon">
@@ -2004,9 +1738,8 @@
 
   <script>
     // === CONFIGURAÇÃO DE WHATSAPP ===
-    // Pode ser configurado aqui, passado via URL (?phone=55...) ou direcionado para link de atendimento
     const urlParams = new URLSearchParams(window.location.search);
-    const WHATSAPP_PHONE = urlParams.get('phone') || ""; // Caso queira fixar: "55..."
+    const WHATSAPP_PHONE = urlParams.get('phone') || "";
     const FALLBACK_LINK = urlParams.get('link') || "https://chat.whatsapp.com/KqTUe1b6V32695FqRzC1Vm";
 
     function buildWhatsAppUrl(messageText) {
@@ -2014,7 +1747,6 @@
         const cleanPhone = WHATSAPP_PHONE.replace(/\D/g, '');
         return `https://wa.me/${cleanPhone}?text=${encodeURIComponent(messageText)}`;
       }
-      // Se não houver número configurado, usa fallback e se for wa.me/api.whatsapp permite texto
       if (FALLBACK_LINK.includes('wa.me') || FALLBACK_LINK.includes('api.whatsapp.com')) {
         const separator = FALLBACK_LINK.includes('?') ? '&' : '?';
         return `${FALLBACK_LINK}${separator}text=${encodeURIComponent(messageText)}`;
@@ -2022,24 +1754,21 @@
       return FALLBACK_LINK;
     }
 
-    // Abertura do WhatsApp geral (botão flutuante)
     function openWhatsAppGeneral(context) {
       const msg = context 
-        ? `Olá Luciane! Estava no catálogo de Black Friday e gostaria de tirar uma dúvida: ${context}`
-        : `Olá Luciane! Estava dando uma olhada no catálogo da Black Friday e preciso de ajuda com os procedimentos.`;
+        ? `Olá Luciane! Estava no Catálogo de Black Friday e gostaria de tirar uma dúvida: ${context}`
+        : `Olá Luciane! Estava olhando o Catálogo de Black Friday e gostaria de mais informações.`;
       
       trackMetaEvent('ClickWhatsAppGeneral', { context: context || 'BotaoAtendimentoFlutuante' });
       window.open(buildWhatsAppUrl(msg), '_blank');
     }
 
-    // Abertura do WhatsApp específico para um procedimento
     function openWhatsAppWithProcedure(procedureName, price) {
-      const msg = `Olá Luciane! Vi no catálogo de Black Friday a oferta de *${procedureName}* por *${price}* e gostaria de agendar / tirar dúvidas!`;
+      const msg = `Olá Luciane! Vi no Catálogo de Black Friday a opção de *${procedureName}* por *${price}* e gostaria de agendar / tirar dúvidas!`;
       trackMetaEvent('ClickWhatsAppProcedure', { procedure: procedureName, price: price });
       window.open(buildWhatsAppUrl(msg), '_blank');
     }
 
-    // Disparo seguro do Meta Pixel
     function trackMetaEvent(eventName, params) {
       if (typeof fbq === 'function') {
         fbq('track', 'Lead', {
@@ -2056,7 +1785,6 @@
       const content = item.querySelector('.accordion-content');
       const isOpen = item.classList.contains('active');
 
-      // Fecha todos os outros acordeões suavemente
       document.querySelectorAll('.accordion-item.active').forEach(openItem => {
         if (openItem !== item) {
           openItem.classList.remove('active');
@@ -2068,7 +1796,7 @@
       if (!isOpen) {
         item.classList.add('active');
         headerBtn.setAttribute('aria-expanded', 'true');
-        content.style.maxHeight = content.scrollHeight + 40 + 'px';
+        content.style.maxHeight = content.scrollHeight + 50 + 'px';
       } else {
         item.classList.remove('active');
         headerBtn.setAttribute('aria-expanded', 'false');
@@ -2076,7 +1804,7 @@
       }
     }
 
-    // === FILTRO DE CATEGORIAS (TODOS / FACIAIS / CORPORAIS) ===
+    // === FILTROS DE CATEGORIA ===
     const filterBtns = document.querySelectorAll('.filter-btn');
     const categorySections = document.querySelectorAll('.section-category');
 
@@ -2102,7 +1830,7 @@
       });
     });
 
-    // Abre o primeiro item (Botox) por padrão para guiar o visitante
+    // Abre o primeiro item (Botox) por padrão
     window.addEventListener('DOMContentLoaded', () => {
       const firstItem = document.getElementById('item-botox');
       if (firstItem) {
@@ -2111,7 +1839,7 @@
       }
     });
 
-    // === BALÃO DE ATENDIMENTO E EFEITO EXIT-INTENT / VIBRAÇÃO ===
+    // === ATENDIMENTO / VIBRAÇÃO / EXIT INTENT ===
     const supportTooltip = document.getElementById('support-tooltip');
     const floatingBtn = document.getElementById('floating-support-btn');
     const exitModal = document.getElementById('exit-modal');
@@ -2129,11 +1857,9 @@
       }
     }
 
-    // Ativa vibração no botão de atendimento
     function triggerVibrationNotice() {
       if (floatingBtn) {
         floatingBtn.classList.add('vibrating');
-        // Vibração física no dispositivo se suportado
         if ("vibrate" in navigator) {
           try {
             navigator.vibrate([100, 60, 100, 60, 150]);
@@ -2152,7 +1878,7 @@
       }
     }
 
-    // Exibe o balão de atendimento automaticamente após 6 segundos
+    // Balão de atendimento automático
     setTimeout(() => {
       if (supportTooltip && !exitTriggered) {
         supportTooltip.classList.add('active');
@@ -2162,7 +1888,7 @@
       }
     }, 6000);
 
-    // Detecta intenção de saída pelo mouse (cursor saindo do topo da janela)
+    // Detecção ao sair pelo topo (desktop/mouse)
     document.addEventListener('mouseleave', (e) => {
       if (e.clientY <= 15 && !exitTriggered) {
         exitTriggered = true;
@@ -2173,7 +1899,6 @@
       }
     });
 
-    // Fechar modal ao clicar fora
     if (exitModal) {
       exitModal.addEventListener('click', (e) => {
         if (e.target === exitModal) {
