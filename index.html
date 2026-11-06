@@ -69,11 +69,48 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 16px 14px 110px;
+      padding: 0 14px 110px;
       position: relative;
       overflow-x: hidden;
       font-weight: 300;
       -webkit-font-smoothing: antialiased;
+    }
+
+    /* Faixa Oficial no Topo (Ribbon Banner) */
+    .top-ribbon-bar {
+      width: 100%;
+      background: #020712;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.28);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      margin-bottom: 16px;
+      position: sticky;
+      top: 0;
+      z-index: 90;
+    }
+
+    .ribbon-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: ribbon-scroll 24s linear infinite;
+    }
+
+    .ribbon-img {
+      height: 32px;
+      width: auto;
+      object-fit: contain;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    @keyframes ribbon-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     /* Iluminação sutil de fundo */
@@ -112,84 +149,28 @@
       margin-bottom: 20px;
     }
 
-    /* Slot reservado para a Logo */
-    .logo-container {
+    /* Logo Hero substituindo a foto de perfil */
+    .hero-logo-box {
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto 12px;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 14px;
-      min-height: 48px;
     }
 
-    .logo-img {
-      max-width: 170px;
-      max-height: 58px;
-      width: auto;
+    .hero-logo-img {
+      width: 100%;
       height: auto;
+      max-height: 130px;
       object-fit: contain;
       display: block;
-    }
-
-    /* Foto de Perfil com aro azul */
-    .profile-area {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
-    .profile-ring {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      padding: 2.5px;
-      background: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #1e40af 100%);
-      box-shadow: 0 0 24px rgba(56, 189, 248, 0.32);
-      margin-bottom: 12px;
-      position: relative;
-    }
-
-    .profile-img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      background: #0f172a;
-    }
-
-    .profile-badge-verified {
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      background: #07090e;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1.5px solid var(--blue-light);
-    }
-
-    .profile-badge-verified svg {
-      width: 14px;
-      height: 14px;
-      fill: var(--blue-light);
-    }
-
-    .sub-brand {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
-      color: var(--blue-light);
-      margin-bottom: 4px;
+      filter: drop-shadow(0 4px 18px rgba(56, 189, 248, 0.28));
     }
 
     /* Título: "Catálogo de Black Friday" somente branco */
     .main-title {
-      font-size: 23px;
+      font-size: 22px;
       font-weight: 700;
       line-height: 1.25;
       color: #ffffff;
@@ -880,32 +861,29 @@
 </head>
 <body>
 
+  <!-- === FAIXA OFICIAL BLACK FRIDAY NO TOPO === -->
+  <div class="top-ribbon-bar" aria-label="Black Friday Dra. Luciane Lima">
+    <div class="ribbon-track">
+      <img src="assets/faixa-topo-cropped.png" alt="Black Friday • Dra. Luciane Lima" class="ribbon-img">
+      <img src="assets/faixa-topo-cropped.png" alt="Black Friday • Dra. Luciane Lima" class="ribbon-img" aria-hidden="true">
+    </div>
+  </div>
+
   <div class="container">
 
     <!-- === CABEÇALHO DO CATÁLOGO === -->
     <header class="header-card">
 
-      <!-- Slot para a Logo Oficial da Luciane Lima (será carregada se existir assets/logo.png) -->
-      <div class="logo-container" id="logo-slot">
-        <img src="assets/logo.png" alt="Luciane Lima" class="logo-img" onerror="this.parentElement.style.display='none'">
+      <!-- Logo Black Friday Oficial substituindo a foto de perfil -->
+      <div class="hero-logo-box">
+        <img src="assets/logo-black-friday.png" alt="Black Friday - Dra. Luciane Lima" class="hero-logo-img">
       </div>
 
-      <div class="profile-area">
-        <div class="profile-ring">
-          <img class="profile-img" src="assets/luciane-lima.jpg" alt="Luciane Lima">
-          <div class="profile-badge-verified" title="Profissional Certificada">
-            <svg viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
-            </svg>
-          </div>
-        </div>
-        <div class="sub-brand">Luciane Lima Estética Avançada</div>
-        <!-- Nome somente em branco -->
-        <h1 class="main-title">Catálogo de Black Friday</h1>
-        <p class="clinic-subtitle">
-          Condições exclusivas para você agendar seus procedimentos.<br>Toque no procedimento para ver detalhes, fotos e valores.
-        </p>
-      </div>
+      <!-- Nome somente em branco -->
+      <h1 class="main-title">Catálogo de Black Friday</h1>
+      <p class="clinic-subtitle">
+        Condições exclusivas para você agendar seus procedimentos.<br>Toque no procedimento para ver detalhes, fotos e valores.
+      </p>
 
       <!-- FILTRO DE CATEGORIAS (MOBILE) -->
       <div class="filter-wrapper" role="tablist">
