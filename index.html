@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Grupo VIP | Black Friday — Luciane Lima Estética Avançada</title>
-  <meta name="description" content="Acesso antecipado e exclusivo às condições de Black Friday para procedimentos estéticos.">
+  <title>Catálogo Black Friday 2026 | Luciane Lima Estética Avançada</title>
+  <meta name="description" content="Condições especiais de Black Friday em procedimentos faciais e corporais exclusivos da Dra. Luciane Lima.">
 
   <!-- Meta Pixel Code (Pixel Luciane - ID: 1440156261235474) -->
   <script>
@@ -25,24 +25,34 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
+  <!-- Google Fonts: Plus Jakarta Sans (fino, elegante e limpo, sem fontes cursivas) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --bg-dark: #07090e;
-      --card-bg: rgba(13, 18, 28, 0.94);
+      --bg-dark: #06080d;
+      --card-bg: rgba(11, 16, 27, 0.92);
+      --card-inner: rgba(18, 25, 41, 0.75);
       --card-border: rgba(56, 189, 248, 0.16);
+      --card-border-hover: rgba(56, 189, 248, 0.38);
       
-      /* Cores da Luciane: Azul Claro e Azul Escuro */
+      /* Identidade Visual Luciane: Azul Elétrico, Azul Real e Preto Profundo */
       --blue-light: #38bdf8;
+      --blue-electric: #0284c7;
       --blue-dark: #1e40af;
-      --blue-gradient: linear-gradient(135deg, #ffffff 0%, #38bdf8 55%, #1d4ed8 100%);
+      --blue-gradient: linear-gradient(135deg, #ffffff 0%, #38bdf8 55%, #0284c7 100%);
+      --glow-accent: rgba(56, 189, 248, 0.20);
       
       --wp-green: #25D366;
+      --wp-dark: #128C7E;
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
-      --accent-glow: rgba(56, 189, 248, 0.22);
+      --text-dim: #64748b;
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
     }
 
     * {
@@ -58,93 +68,110 @@
       color: var(--text-main);
       min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      padding: 20px 16px 80px;
+      padding: 24px 16px 120px;
       position: relative;
       overflow-x: hidden;
+      font-weight: 300;
     }
 
-    /* Iluminação de fundo estética em azul */
+    /* Iluminação de fundo estética */
     body::before {
       content: "";
       position: fixed;
-      top: -70px;
+      top: -120px;
       left: 50%;
       transform: translateX(-50%);
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, var(--accent-glow) 0%, rgba(7, 9, 14, 0) 70%);
+      width: 650px;
+      height: 450px;
+      background: radial-gradient(ellipse at top, var(--glow-accent) 0%, rgba(6, 8, 13, 0) 70%);
       pointer-events: none;
       z-index: 0;
     }
 
-    .card {
+    body::after {
+      content: "";
+      position: fixed;
+      bottom: -150px;
+      right: 10%;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(30, 64, 175, 0.12) 0%, rgba(6, 8, 13, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
       width: 100%;
-      max-width: 410px;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 28px;
-      padding: 30px 20px 26px;
-      text-align: center;
+      max-width: 860px;
       position: relative;
       z-index: 1;
-      backdrop-filter: blur(16px);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95),
-                  0 0 25px -5px rgba(56, 189, 248, 0.12),
-                  0 0 0 1px rgba(255, 255, 255, 0.04);
     }
 
-    /* Tag de Alerta Black Friday */
-    .pill-badge {
+    /* === HEADER LUXURY === */
+    .header-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px 28px;
+      text-align: center;
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8),
+                  0 0 30px -5px rgba(56, 189, 248, 0.10);
+      margin-bottom: 24px;
+    }
+
+    .badge-top {
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      background: rgba(56, 189, 248, 0.12);
-      border: 1px solid rgba(56, 189, 248, 0.4);
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.10);
+      border: 1px solid rgba(56, 189, 248, 0.35);
       color: var(--blue-light);
-      padding: 6px 14px;
+      padding: 6px 16px;
       border-radius: 999px;
       font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
       text-transform: uppercase;
-      margin-bottom: 18px;
-      box-shadow: 0 0 14px rgba(56, 189, 248, 0.15);
+      margin-bottom: 20px;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.14);
     }
 
-    .pill-dot {
+    .pulse-dot {
       width: 7px;
       height: 7px;
       border-radius: 50%;
       background: var(--blue-light);
       box-shadow: 0 0 8px var(--blue-light);
-      animation: pulse-dot 1.8s infinite ease-in-out;
+      animation: pulse-dot 2s infinite ease-in-out;
     }
 
     @keyframes pulse-dot {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.85); }
+      50% { opacity: 0.35; transform: scale(0.8); }
     }
 
-    /* Avatar com aro iluminado em degradê (branco -> azul claro -> azul escuro) */
-    .avatar-box {
-      position: relative;
-      width: 110px;
-      height: 110px;
-      margin: 0 auto 16px;
+    .profile-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 18px;
     }
 
-    .avatar-ring {
-      width: 100%;
-      height: 100%;
+    .profile-ring {
+      width: 104px;
+      height: 104px;
       border-radius: 50%;
-      padding: 3.5px;
+      padding: 3px;
       background: var(--blue-gradient);
-      box-shadow: 0 0 28px rgba(56, 189, 248, 0.35);
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+      margin-bottom: 14px;
+      position: relative;
     }
 
-    .avatar-img {
+    .profile-img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
@@ -153,419 +180,2007 @@
       background: #0f172a;
     }
 
-    .avatar-wp-icon {
+    .profile-badge-verified {
       position: absolute;
       bottom: 2px;
       right: 2px;
-      width: 32px;
-      height: 32px;
-      background: var(--wp-green);
+      background: #000;
       border-radius: 50%;
+      width: 26px;
+      height: 26px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2.5px solid #0d121c;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      border: 1.5px solid var(--blue-light);
     }
 
-    .avatar-wp-icon svg {
-      width: 18px;
-      height: 18px;
-      fill: #ffffff;
+    .profile-badge-verified svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--blue-light);
     }
 
-    /* Títulos */
-    .title-group {
+    .sub-brand {
       font-size: 11.5px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+      font-weight: 600;
+      letter-spacing: 2.2px;
       text-transform: uppercase;
       color: var(--blue-light);
-      margin-bottom: 4px;
-    }
-
-    .title-main {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      font-size: 23px;
-      font-weight: 800;
-      line-height: 1.25;
-      color: #ffffff;
       margin-bottom: 6px;
     }
 
-    /* Degradê do branco para azul claro e azul escuro */
-    .title-main .blue-gradient {
+    .main-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .main-title .gradient-text {
       background: var(--blue-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       display: inline-block;
     }
 
-    .subtitle-author {
-      font-family: 'Playfair Display', serif;
-      font-style: italic;
-      font-size: 16px;
-      color: var(--blue-light);
-      margin-bottom: 20px;
+    .clinic-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      font-weight: 400;
+      letter-spacing: 0.5px;
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.5;
     }
 
-    /* Botão CTA Principal */
-    .btn-cta {
+    /* === CONTROLE DE CATEGORIAS (TABS / FILTRO) === */
+    .filter-wrapper {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       gap: 10px;
-      width: 100%;
-      background: linear-gradient(180deg, #2ae06f 0%, #1ea952 100%);
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: 0.3px;
-      padding: 18px 20px;
-      border-radius: 16px;
-      box-shadow: 0 10px 24px -4px rgba(37, 211, 102, 0.45),
-                  inset 0 1px 0 rgba(255, 255, 255, 0.28);
-      position: relative;
+      margin: 22px 0 26px;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      background: rgba(18, 25, 41, 0.7);
+      border: 1px solid rgba(56, 189, 248, 0.18);
+      color: var(--text-muted);
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 500;
       cursor: pointer;
-      transition: transform 0.15s ease, filter 0.15s ease;
-      animation: pulse-glow 2.2s infinite;
-    }
-
-    @keyframes pulse-glow {
-      0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6), 0 10px 24px -4px rgba(37, 211, 102, 0.45);
-      }
-      70% {
-        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0), 0 10px 24px -4px rgba(37, 211, 102, 0.45);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 10px 24px -4px rgba(37, 211, 102, 0.45);
-      }
-    }
-
-    .btn-cta:active {
-      transform: scale(0.98);
-      filter: brightness(0.93);
-    }
-
-    .btn-cta svg {
-      width: 22px;
-      height: 22px;
-      fill: #ffffff;
-      flex-shrink: 0;
-    }
-
-    /* Membros ativos / Prova social */
-    .social-proof {
-      margin-top: 14px;
-      margin-bottom: 22px;
       display: inline-flex;
       align-items: center;
-      gap: 7px;
-      font-size: 12.5px;
-      color: #94a3b8;
-      background: rgba(56, 189, 248, 0.06);
-      padding: 5px 14px;
+      gap: 8px;
+      transition: all 0.25s ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .filter-btn:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    .filter-btn.active {
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.24) 0%, rgba(2, 132, 199, 0.35) 100%);
+      border-color: var(--blue-light);
+      color: #ffffff;
+      font-weight: 600;
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
+    }
+
+    .filter-count {
+      font-size: 11px;
+      padding: 2px 7px;
       border-radius: 999px;
-      border: 1px solid rgba(56, 189, 248, 0.15);
-    }
-
-    .social-proof-dot {
-      width: 7px;
-      height: 7px;
-      background: var(--blue-light);
-      border-radius: 50%;
-      box-shadow: 0 0 6px var(--blue-light);
-    }
-
-    .social-proof strong {
-      color: #ffffff;
-    }
-
-    /* Cartão de Benefícios / Segurança */
-    .benefits {
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px solid rgba(56, 189, 248, 0.12);
-      border-radius: 16px;
-      padding: 15px 16px;
-      margin-bottom: 20px;
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 11px;
-    }
-
-    .benefit-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 13px;
-      color: #e2e8f0;
-      line-height: 1.4;
-    }
-
-    .benefit-icon {
-      width: 18px;
-      height: 18px;
+      background: rgba(255, 255, 255, 0.08);
       color: var(--blue-light);
-      flex-shrink: 0;
     }
 
-    .benefit-row strong {
+    .filter-btn.active .filter-count {
+      background: rgba(56, 189, 248, 0.25);
       color: #ffffff;
     }
 
-    /* Nota segura */
-    .security-note {
-      font-size: 11.5px;
-      color: #64748b;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
+    /* === GRUPO / SEÇÃO DE OBJETIVO === */
+    .section-category {
+      margin-bottom: 28px;
     }
 
-    .security-note svg {
-      width: 13px;
-      height: 13px;
-      fill: currentColor;
-    }
-
-    /* === NOTIFICAÇÃO FLUTUANTE SUBINDO (FOMO PROVA SOCIAL) === */
-    .toast-container {
-      position: fixed;
-      bottom: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: calc(100% - 32px);
-      max-width: 380px;
-      z-index: 999;
-      pointer-events: none;
-    }
-
-    .toast-notification {
+    .category-header {
       display: flex;
       align-items: center;
       gap: 12px;
-      background: rgba(13, 18, 28, 0.96);
-      border: 1px solid rgba(37, 211, 102, 0.35);
-      border-radius: 16px;
-      padding: 12px 14px;
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.75), 0 0 16px rgba(37, 211, 102, 0.2);
-      backdrop-filter: blur(14px);
-      opacity: 0;
-      transform: translateY(35px) scale(0.96);
-      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-bottom: 14px;
+      padding-left: 4px;
     }
 
-    .toast-notification.show {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-
-    .toast-avatar {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #25D366, #128C7E);
+    .category-icon-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
-      box-shadow: 0 0 12px rgba(37, 211, 102, 0.45);
+      color: var(--blue-light);
     }
 
-    .toast-avatar svg {
-      width: 20px;
-      height: 20px;
-      fill: #ffffff;
+    .category-icon-box svg {
+      width: 17px;
+      height: 17px;
     }
 
-    .toast-content {
-      flex: 1;
+    .category-title {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .category-count {
+      font-size: 12px;
+      color: var(--blue-light);
+      font-weight: 500;
+    }
+
+    /* === ACORDEÕES DOS PROCEDIMENTOS === */
+    .accordion-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .accordion-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;
+      backdrop-filter: blur(16px);
+    }
+
+    .accordion-item:hover {
+      border-color: var(--card-border-hover);
+      box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.6), 0 0 16px rgba(56, 189, 248, 0.1);
+    }
+
+    .accordion-item.active {
+      border-color: rgba(56, 189, 248, 0.5);
+      box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.75), 0 0 22px rgba(56, 189, 248, 0.16);
+    }
+
+    /* Cabeçalho do Acordeão */
+    .accordion-header {
+      width: 100%;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      cursor: pointer;
+      user-select: none;
+      background: transparent;
+      border: none;
+      color: inherit;
       text-align: left;
     }
 
-    .toast-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: #ffffff;
-      line-height: 1.25;
+    .accordion-header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
     }
 
-    .toast-meta {
-      font-size: 11px;
-      color: #94a3b8;
-      margin-top: 2px;
+    .procedure-badge-row {
       display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .procedure-tag {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(56, 189, 248, 0.10);
+      color: var(--blue-light);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .procedure-name {
+      font-size: 16px;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+      line-height: 1.35;
+    }
+
+    .accordion-header-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .header-price-preview {
+      text-align: right;
+    }
+
+    .header-price-val {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--blue-light);
+      letter-spacing: -0.3px;
+      display: block;
+    }
+
+    .header-price-term {
+      font-size: 11px;
+      color: var(--text-muted);
+      display: block;
+    }
+
+    .chevron-box {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--blue-light);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .chevron-box svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-item.active .chevron-box {
+      background: rgba(56, 189, 248, 0.18);
+      border-color: rgba(56, 189, 248, 0.35);
+      transform: rotate(180deg);
+    }
+
+    /* Conteúdo Expandido do Acordeão */
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+      border-top: 1px solid transparent;
+    }
+
+    .accordion-item.active .accordion-content {
+      opacity: 1;
+      border-top-color: rgba(56, 189, 248, 0.12);
+    }
+
+    .accordion-body-grid {
+      padding: 22px 20px 24px;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    /* === BOX PADRONIZADA DE ANTES E DEPOIS === */
+    .before-after-wrapper {
+      width: 100%;
+    }
+
+    .before-after-box {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 14px;
+      background: linear-gradient(145deg, #0a0e18 0%, #101726 100%);
+      border: 1px dashed rgba(56, 189, 248, 0.32);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      text-align: center;
+      box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.6);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .before-after-box:hover {
+      border-color: var(--blue-light);
+      box-shadow: inset 0 2px 14px rgba(0, 0, 0, 0.7), 0 0 14px rgba(56, 189, 248, 0.12);
+    }
+
+    /* Quando a imagem for inserida, ocupa todo o box com corte perfeito */
+    .procedure-photo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 13px;
+      z-index: 2;
+    }
+
+    /* Placeholder elegante enquanto não envia a foto */
+    .photo-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      z-index: 1;
+    }
+
+    .placeholder-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: var(--blue-light);
+      padding: 4px 10px;
+      border-radius: 999px;
+      display: inline-flex;
       align-items: center;
       gap: 5px;
     }
 
-    .toast-meta-tag {
-      color: var(--wp-green);
+    .placeholder-badge-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--blue-light);
+    }
+
+    .placeholder-icon {
+      width: 38px;
+      height: 38px;
+      color: rgba(56, 189, 248, 0.65);
+      margin: 4px 0 2px;
+    }
+
+    .placeholder-title {
+      font-size: 13px;
       font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+    }
+
+    .placeholder-desc {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      max-width: 220px;
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    /* === DETALHES DO PROCEDIMENTO (COLUNA DIREITA) === */
+    .procedure-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .detail-block-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--blue-light);
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .detail-block-title svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .procedure-description {
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: #e2e8f0;
+      font-weight: 300;
+    }
+
+    .indications-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .indication-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    .indication-check {
+      width: 15px;
+      height: 15px;
+      color: var(--blue-light);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* === CARD DE PREÇO EM DESTAQUE === */
+    .price-card-highlight {
+      background: linear-gradient(145deg, rgba(14, 21, 35, 0.95) 0%, rgba(8, 12, 22, 0.95) 100%);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: var(--radius-md);
+      padding: 16px 18px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(56, 189, 248, 0.05);
+      margin-top: 4px;
+    }
+
+    .price-card-highlight::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--blue-light);
+      box-shadow: 0 0 10px var(--blue-light);
+    }
+
+    .price-header-label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .price-black-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #0284c7;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    .price-limited-note {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .price-main-value {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .price-main-value .cash-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--blue-light);
+      letter-spacing: 0.3px;
+    }
+
+    .price-installment-value {
+      font-size: 13.5px;
+      color: #94a3b8;
+      margin-top: 4px;
+      font-weight: 400;
+    }
+
+    .price-installment-value strong {
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    /* Botão de ação por procedimento */
+    .btn-procedure-action {
+      margin-top: 14px;
+      width: 100%;
+      background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-procedure-action:hover {
+      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+      box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-procedure-action svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    /* === BOTÃO DE ATENDIMENTO FLUTUANTE (WHATSAPP COM VIBRAÇÃO & EXIT-INTENT) === */
+    .support-floating-wrapper {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+
+    /* Tooltip / Balão de Atendimento */
+    .support-tooltip {
+      background: rgba(13, 19, 32, 0.96);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: 16px;
+      padding: 12px 16px;
+      max-width: 280px;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 0 0 20px rgba(56, 189, 248, 0.2);
+      backdrop-filter: blur(16px);
+      opacity: 0;
+      transform: translateY(12px) scale(0.92);
+      pointer-events: none;
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .support-tooltip.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .support-tooltip::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      right: 26px;
+      width: 12px;
+      height: 12px;
+      background: rgba(13, 19, 32, 0.96);
+      border-right: 1px solid rgba(56, 189, 248, 0.35);
+      border-bottom: 1px solid rgba(56, 189, 248, 0.35);
+      transform: rotate(45deg);
+    }
+
+    .tooltip-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .tooltip-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tooltip-title-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--wp-green);
+      box-shadow: 0 0 6px var(--wp-green);
+    }
+
+    .tooltip-close {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 1;
+      padding: 2px 4px;
+    }
+
+    .tooltip-text {
+      font-size: 12px;
+      color: #cbd5e1;
+      line-height: 1.45;
+      font-weight: 300;
+    }
+
+    /* Botão Flutuante Principal */
+    .support-btn-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 12px 20px 12px 14px;
+      border-radius: 999px;
+      box-shadow: 0 10px 28px -4px rgba(37, 211, 102, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.18);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .support-btn-pill:hover {
+      transform: scale(1.04);
+      box-shadow: 0 12px 34px -4px rgba(37, 211, 102, 0.7), 0 0 18px rgba(37, 211, 102, 0.4);
+    }
+
+    .support-btn-icon {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .support-btn-icon svg {
+      width: 18px;
+      height: 18px;
+      fill: #ffffff;
+    }
+
+    .support-btn-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .support-text-main {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .support-text-sub {
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+    }
+
+    /* Animação de Vibração / Chamar Atenção ao Tentar Sair */
+    @keyframes shake-vibrate {
+      0%, 100% { transform: translateX(0) scale(1); }
+      15% { transform: translateX(-8px) rotate(-3deg) scale(1.05); }
+      30% { transform: translateX(8px) rotate(3deg) scale(1.05); }
+      45% { transform: translateX(-6px) rotate(-2deg) scale(1.05); }
+      60% { transform: translateX(6px) rotate(2deg) scale(1.05); }
+      75% { transform: translateX(-3px) rotate(-1deg) scale(1.02); }
+      90% { transform: translateX(3px) rotate(1deg) scale(1.02); }
+    }
+
+    .support-btn-pill.vibrating {
+      animation: shake-vibrate 0.8s ease-in-out infinite;
+      box-shadow: 0 0 25px rgba(37, 211, 102, 0.85), 0 0 45px rgba(56, 189, 248, 0.5);
+    }
+
+    /* Modal de Intenção de Saída (Exit Intent Banner) */
+    .exit-modal-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 99999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .exit-modal-backdrop.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .exit-modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--blue-light);
+      border-radius: var(--radius-lg);
+      padding: 30px 24px;
+      max-width: 440px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(56, 189, 248, 0.3);
+      transform: translateY(20px) scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .exit-modal-backdrop.show .exit-modal-card {
+      transform: translateY(0) scale(1);
+    }
+
+    .exit-close-btn {
+      position: absolute;
+      top: 14px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.08);
+      border: none;
+      color: #cbd5e1;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .exit-modal-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: var(--blue-light);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .exit-modal-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .exit-modal-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    /* Footer discreto */
+    .catalog-footer {
+      text-align: center;
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 12px;
+      color: var(--text-dim);
+    }
+
+    .catalog-footer strong {
+      color: var(--text-muted);
+    }
+
+    /* === RESPONSIVIDADE === */
+    @media (max-width: 768px) {
+      .header-card {
+        padding: 24px 18px 22px;
+      }
+      .main-title {
+        font-size: 23px;
+      }
+      .accordion-header {
+        padding: 16px;
+      }
+      .procedure-name {
+        font-size: 15px;
+      }
+      .header-price-val {
+        font-size: 15px;
+      }
+      .accordion-body-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 18px 16px 20px;
+      }
+      .before-after-box {
+        max-width: 100%;
+        aspect-ratio: 16 / 10;
+      }
+      .support-floating-wrapper {
+        bottom: 16px;
+        right: 16px;
+      }
+      .support-btn-pill {
+        padding: 10px 16px 10px 12px;
+      }
+      .support-text-main {
+        font-size: 12.5px;
+      }
+      .support-tooltip {
+        max-width: 250px;
+        right: 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <main class="card">
-    <!-- Badge -->
-    <div class="pill-badge">
-      <span class="pill-dot"></span>
-      <span>Grupo VIP • Vagas Limitadas</span>
+  <div class="container">
+
+    <!-- === CABEÇALHO DO CATÁLOGO === -->
+    <header class="header-card">
+      <div class="badge-top">
+        <span class="pulse-dot"></span>
+        <span>Condições Exclusivas • Nov/26</span>
+      </div>
+
+      <div class="profile-area">
+        <div class="profile-ring">
+          <img class="profile-img" src="assets/luciane-lima.jpg" alt="Luciane Lima">
+          <div class="profile-badge-verified" title="Profissional Certificada">
+            <svg viewBox="0 0 24 24">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="sub-brand">Luciane Lima Estética Avançada</div>
+        <h1 class="main-title">
+          Catálogo <span class="gradient-text">Black Friday</span>
+        </h1>
+        <p class="clinic-subtitle">
+          Condições e pacotes especiais de Black Friday com vagas limitadas para a agenda de novembro de 2026. Selecione um procedimento para visualizar indicações, valores e resultados.
+        </p>
+      </div>
+
+      <!-- FILTRO DE CATEGORIAS -->
+      <div class="filter-wrapper" role="tablist">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <span>Todos</span>
+          <span class="filter-count">9</span>
+        </button>
+        <button class="filter-btn" data-filter="facial" role="tab" aria-selected="false">
+          <span>Faciais</span>
+          <span class="filter-count">7</span>
+        </button>
+        <button class="filter-btn" data-filter="corporal" role="tab" aria-selected="false">
+          <span>Corporais</span>
+          <span class="filter-count">2</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- === SEÇÃO: PROCEDIMENTOS FACIAIS === -->
+    <section class="section-category" data-category="facial">
+      <div class="category-header">
+        <div class="category-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a8 8 0 0 0-8 8c0 4.418 3.582 8 8 8s8-3.582 8-8a8 8 0 0 0-8-8z"/>
+            <path d="M9 10h.01M15 10h.01M9.5 14.5c.8 1 2.2 1 3 0"/>
+          </svg>
+        </div>
+        <h2 class="category-title">Procedimentos Faciais</h2>
+        <span class="category-count">7 protocolos</span>
+      </div>
+
+      <div class="accordion-list">
+
+        <!-- 1. BOTOX -->
+        <article class="accordion-item" id="item-botox" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Alta Procura</span>
+              </div>
+              <h3 class="procedure-name">Botox (Toxina Botulínica)</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 599,90</span>
+                <span class="header-price-term">ou 12x 58,90</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <!-- BOX PADRONIZADA ANTES & DEPOIS -->
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-botox">
+                  <!-- Inserir imagem: assets/antes-depois-botox.jpg -->
+                  <img src="" alt="Antes e Depois - Botox" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                      <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                      <circle cx="12" cy="13" r="4"/>
+                    </svg>
+                    <span class="placeholder-title">Resultado Clínico</span>
+                    <span class="placeholder-desc">Espaço reservado para o antes e depois do Botox.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DETALHES E PREÇO -->
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Aplicação precisa de toxina botulínica para suavizar e prevenir linhas de expressão faciais, preservando a harmonia e naturalidade das expressões sem aspecto artificial.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Rugas na testa e linhas entre as sobrancelhas (glabela)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Linhas periorbitais ("pés de galinha") e arqueamento sutil do olhar</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Prevenção de rugas estáticas e rejuvenescimento preventivo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 599,90 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 58,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Botox (Toxina Botulínica)', 'R$ 599,90 à vista ou 12x de R$ 58,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Aproveitar o Botox
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. BIOESTIMULADOR DE COLÁGENO -->
+        <article class="accordion-item" id="item-bioestimulador" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Rejuvenescimento</span>
+              </div>
+              <h3 class="procedure-name">Bioestimulador de Colágeno</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 999,90</span>
+                <span class="header-price-term">ou 12x 99,90</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-bioestimulador">
+                  <img src="" alt="Antes e Depois - Bioestimulador de Colágeno" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Firmeza e Densidade</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado do Bioestimulador.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Estímulo potente e biológico dos fibroblastos nas camadas dérmicas profundas, promovendo a neocolagênese para recuperação estrutural da pele e efeito lifting natural progressivo.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Tratamento da flacidez facial e perda de sustentação dérmica</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Melhora da espessura, tônus e viço da derme facial</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Restauração dos contornos faciais com durabilidade de até 24 meses</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 999,90 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 99,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Bioestimulador de Colágeno', 'R$ 999,90 à vista ou 12x de R$ 99,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Agendar Bioestimulador
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. PREENCHIMENTO (O ML) -->
+        <article class="accordion-item" id="item-preenchimento" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Harmonização</span>
+              </div>
+              <h3 class="procedure-name">Preenchimento com Ácido Hialurônico (o ml)</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 749,90</span>
+                <span class="header-price-term">ou 12x 74,90 (o ml)</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-preenchimento">
+                  <img src="" alt="Antes e Depois - Preenchimento" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Contorno e Volume</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Utilização de ácido hialurônico premium e biocompatível para desenhar contornos, devolver volume perdido com o tempo e harmonizar pontos nobres do rosto com segurança clínica.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Escultura labial (definição de contorno, hidratação e volume)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Correção de olheiras profundas e "bigode chinês" (sulco nasogeniano)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Projeção de queixo (mento), mandíbula e maçãs do rosto (malar)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Valor por ml • Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 749,90 <span class="cash-tag">o ml à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 74,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Preenchimento com Ácido Hialurônico (o ml)', 'R$ 749,90 à vista ou 12x de R$ 74,90 (o ml)'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Garantir Meu Preenchimento
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. TRATAMENTO PARA CICATRIZ DE ACNE (RADIOFREQUÊNCIA MICROAGULHADA 3 SESSÕES) -->
+        <article class="accordion-item" id="item-cicatriz-acne" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Pacote Premium</span>
+              </div>
+              <h3 class="procedure-name">Tratamento Cicatriz de Acne c/ Radiofrequência Microagulhada</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 1.399,90</span>
+                <span class="header-price-term">3 sessões • 12x 139,90</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-cicatriz-acne">
+                  <img src="" alt="Antes e Depois - Cicatriz de Acne com Radiofrequência" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Remodelação Dérmica</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado das 3 sessões.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento (Pacote com 3 Sessões)
+                  </div>
+                  <p class="procedure-description">
+                    Combinação tecnológica da indução mecânica de microagulhas de ouro com a emissão profunda de calor térmico por radiofrequência, quebrando a fibrose das cicatrizes e renovando a derme.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Cicatrizes atróficas e sequelas profundas de acne (ice pick, boxcar e rolling)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Poros extremamente dilatados e textura irregular/áspera</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Fechamento dérmico e rejuvenescimento profundo</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Pacote 3 Sessões • Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 1.399,90 <span class="cash-tag">à vista (3 sessões)</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 139,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Tratamento Cicatriz de Acne com Radiofrequência Microagulhada (3 Sessões)', 'R$ 1.399,90 à vista ou 12x de R$ 139,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero o Tratamento de Acne (3 Sessões)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. MICROAGULHAMENTO -->
+        <article class="accordion-item" id="item-microagulhamento" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Renovação</span>
+              </div>
+              <h3 class="procedure-name">Microagulhamento com Drug Delivery</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 229,90</span>
+                <span class="header-price-term">condição à vista</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-microagulhamento">
+                  <img src="" alt="Antes e Depois - Microagulhamento" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Textura e Poros</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado do Microagulhamento.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Microperfurações cirúrgicas e estéreis na derme que ativam os fatores de crescimento celular combinadas com infusão de ativos estéreis de clareamento, hidratação e firmeza.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Poros abertos e textura áspera na face</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Linhas finas, viço apagado e manchas superficiais</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Estímulo global de colágeno natural</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 229,90 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    consulte parcelamento facilitado no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Microagulhamento', 'R$ 229,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Agendar Microagulhamento
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. LIMPEZA DE PELE COM DERMAPLANING -->
+        <article class="accordion-item" id="item-dermaplaning" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Glow Imediato</span>
+              </div>
+              <h3 class="procedure-name">Limpeza de Pele com Dermaplaning</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 180,00</span>
+                <span class="header-price-term">condição à vista</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-dermaplaning">
+                  <img src="" alt="Antes e Depois - Limpeza de Pele com Dermaplaning" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Pele de Porcelana</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado com Dermaplaning.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Limpeza profunda com extração rigorosa aliada ao dermaplaning (esfoliação física precisa com lâmina dermatológica), removendo células mortas e a penugem facial (lanugem).
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Acabamento aveludado e fixação perfeita de maquiagem</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Desobstrução de poros e eliminação imediata do aspecto opaco</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Potencialização profunda de skincare e séruns</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 180,00 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    procedimento completo com dermaplaning incluso
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Limpeza de Pele com Dermaplaning', 'R$ 180,00'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Limpeza com Dermaplaning
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. LIMPEZA DE PELE COM PEELING -->
+        <article class="accordion-item" id="item-peeling" data-category="facial">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Facial • Higienização & Peeling</span>
+              </div>
+              <h3 class="procedure-name">Limpeza de Pele com Peeling</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 159,90</span>
+                <span class="header-price-term">condição à vista</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-peeling">
+                  <img src="" alt="Antes e Depois - Limpeza de Pele com Peeling" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Pele Limpa e Renovada</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado da Limpeza com Peeling.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Protocolo completo de higienização facial com emoliência, extração minuciosa de comedões e aplicação de peeling químico controlado para acelerar a renovação celular.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Controle efetivo da oleosidade e eliminação de cravos</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Uniformização da tonalidade e clareamento de manchinhas leves</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Higienização e restauração da barreira cutânea</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Agenda Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 159,90 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    limpeza profunda com peeling químico incluso
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Limpeza de Pele com Peeling', 'R$ 159,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Limpeza com Peeling
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- === SEÇÃO: PROCEDIMENTOS CORPORAIS === -->
+    <section class="section-category" data-category="corporal">
+      <div class="category-header">
+        <div class="category-icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 3a4 4 0 0 1 4 4c0 2-2 4-4 4s-4-2-4-4a4 4 0 0 1 4-4z"/>
+            <path d="M6 21v-2a6 6 0 0 1 12 0v2"/>
+          </svg>
+        </div>
+        <h2 class="category-title">Procedimentos Corporais</h2>
+        <span class="category-count">2 protocolos</span>
+      </div>
+
+      <div class="accordion-list">
+
+        <!-- 8. PREENCHIMENTO GLÚTEO 20ML -->
+        <article class="accordion-item" id="item-gluteo" data-category="corporal">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Corporal • Contorno Glúteo</span>
+              </div>
+              <h3 class="procedure-name">Preenchimento Glúteo 20ml</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 3.299,90</span>
+                <span class="header-price-term">ou 12x 329,90</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-gluteo">
+                  <img src="" alt="Antes e Depois - Preenchimento Glúteo 20ml" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Contorno e Volume</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado do Preenchimento Glúteo.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento (20ml)
+                  </div>
+                  <p class="procedure-description">
+                    Protocolo avançado de remodelagem e volumização dos glúteos com biomateriais seguros e de alta coesividade, corrigindo assimetrias e desenhando curvas harmoniosas.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Correção da depressão trocantérica (lateral do bumbum)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Aumento sutil e projeção do polo superior</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Melhora estética da celulite e firmeza da área</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Pacote 20ml • Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 3.299,90 <span class="cash-tag">à vista</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 329,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Preenchimento Glúteo 20ml', 'R$ 3.299,90 à vista ou 12x de R$ 329,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Preenchimento Glúteo (20ml)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. CRIOLIPÓLISE REGIÃO -->
+        <article class="accordion-item" id="item-criolipolise" data-category="corporal">
+          <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
+            <div class="accordion-header-left">
+              <div class="procedure-badge-row">
+                <span class="procedure-tag">Corporal • Gordura Localizada</span>
+              </div>
+              <h3 class="procedure-name">Criolipólise (por região)</h3>
+            </div>
+            <div class="accordion-header-right">
+              <div class="header-price-preview">
+                <span class="header-price-val">R$ 249,90</span>
+                <span class="header-price-term">ou 12x 24,90 (região)</span>
+              </div>
+              <div class="chevron-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <div class="accordion-content">
+            <div class="accordion-body-grid">
+              <div class="before-after-wrapper">
+                <div class="before-after-box" id="box-criolipolise">
+                  <img src="" alt="Antes e Depois - Criolipólise" class="procedure-photo" onerror="this.style.display='none'">
+                  <div class="photo-placeholder">
+                    <span class="placeholder-badge"><span class="placeholder-badge-dot"></span> Antes & Depois</span>
+                    <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <span class="placeholder-title">Redução de Medidas</span>
+                    <span class="placeholder-desc">Espaço reservado para o resultado da Criolipólise.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="procedure-details">
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                    Sobre o Tratamento
+                  </div>
+                  <p class="procedure-description">
+                    Tecnologia não-invasiva de resfriamento controlado até temperaturas negativas que induz a apoptose (eliminação programada) dos adipócitos sem danificar os tecidos adjacentes.
+                  </p>
+                </div>
+
+                <div>
+                  <div class="detail-block-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    Para que é Indicado
+                  </div>
+                  <div class="indications-list">
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Gordura localizada rebelde (abdômen superior e inferior)</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Flancos ("pneuzinhos"), culote, braços e gordurinha do sutiã</span>
+                    </div>
+                    <div class="indication-item">
+                      <svg class="indication-check" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                      <span>Redução de até 25% a 30% da camada de gordura na região tratada</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="price-card-highlight">
+                  <div class="price-header-label">
+                    <span class="price-black-badge">Oferta Black Friday</span>
+                    <span class="price-limited-note">Por Região • Nov/26</span>
+                  </div>
+                  <div class="price-main-value">
+                    R$ 249,90 <span class="cash-tag">à vista por região</span>
+                  </div>
+                  <div class="price-installment-value">
+                    ou em até <strong>12x de R$ 24,90</strong> no cartão
+                  </div>
+
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Criolipólise (por região)', 'R$ 249,90 à vista ou 12x de R$ 24,90'); return false;">
+                    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+                    Quero Criolipólise por Região
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FOOTER DO CATÁLOGO -->
+    <footer class="catalog-footer">
+      <p><strong>Luciane Lima Estética Avançada</strong> • Black Friday 2026</p>
+      <p style="margin-top: 4px;">Valores e condições válidos para atendimentos e reservas de novembro de 2026.</p>
+    </footer>
+
+  </div>
+
+  <!-- === BOTÃO DE ATENDIMENTO FLUTUANTE (WHATSAPP COM VIBRAÇÃO & EXIT INTENT) === -->
+  <div class="support-floating-wrapper">
+    <!-- Balão de Ajuda / Atendimento -->
+    <div id="support-tooltip" class="support-tooltip">
+      <div class="tooltip-header">
+        <div class="tooltip-title">
+          <span class="tooltip-title-dot"></span>
+          Atendimento Luciane Lima
+        </div>
+        <button class="tooltip-close" onclick="closeSupportTooltip()" aria-label="Fechar">&times;</button>
+      </div>
+      <p class="tooltip-text">
+        Ficou com dúvida sobre qual procedimento é ideal para o seu objetivo? Fale comigo agora pelo WhatsApp!
+      </p>
     </div>
 
-    <!-- Foto do Perfil do WhatsApp com aro em degradê Azul -->
-    <div class="avatar-box">
-      <div class="avatar-ring">
-        <img class="avatar-img" src="assets/luciane-lima.jpg" alt="Luciane Lima">
-      </div>
-      <div class="avatar-wp-icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24">
-          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92z"/>
-        </svg>
-      </div>
-    </div>
-
-    <!-- Cabeçalho -->
-    <div class="title-group">Black Friday Exclusiva</div>
-    <h1 class="title-main">
-      👑 Grupo VIP <br><span class="blue-gradient">Condições Especiais</span>
-    </h1>
-    <div class="subtitle-author">Luciane Lima Estética Avançada</div>
-
-    <!-- Botão de Ação Imediata (Topo) -->
-    <a id="whatsapp-btn" href="https://chat.whatsapp.com/KqTUe1b6V32695FqRzC1Vm" class="btn-cta" target="_blank" rel="noopener noreferrer">
-      <svg viewBox="0 0 24 24">
-        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/>
-      </svg>
-      ENTRAR NO GRUPO VIP AGORA
-    </a>
-
-    <!-- Prova Social Dinâmica -->
-    <div class="social-proof">
-      <span class="social-proof-dot"></span>
-      <span><strong id="counter-members">43</strong> mulheres já entraram</span>
-    </div>
-
-    <!-- Benefícios do Grupo -->
-    <div class="benefits">
-      <div class="benefit-row">
-        <svg class="benefit-icon" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-        </svg>
-        <span>Acesso <strong>antecipado e exclusivo</strong> aos procedimentos</span>
-      </div>
-      <div class="benefit-row">
-        <svg class="benefit-icon" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-        </svg>
-        <span>Condições únicas que não irão para o feed</span>
-      </div>
-      <div class="benefit-row">
-        <svg class="benefit-icon" viewBox="0 0 20 20" fill="currentColor">
-          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-        </svg>
-        <span>Grupo fechado (apenas administradores enviam mensagem)</span>
-      </div>
-    </div>
-
-    <!-- Segurança -->
-    <div class="security-note">
-      <svg viewBox="0 0 20 20">
-        <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
-      </svg>
-      <span>Acesso 100% gratuito e seguro</span>
-    </div>
-  </main>
-
-  <!-- Container de Notificação Subindo (FOMO) -->
-  <div class="toast-container">
-    <div id="toast" class="toast-notification">
-      <div class="toast-avatar">
+    <!-- Botão Flutuante -->
+    <a id="floating-support-btn" href="#" class="support-btn-pill" onclick="openWhatsAppGeneral(); return false;" title="Precisa de ajuda? Me chame">
+      <div class="support-btn-icon">
         <svg viewBox="0 0 24 24">
           <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/>
         </svg>
       </div>
-      <div class="toast-content">
-        <div id="toast-title" class="toast-title">Camila R. acabou de entrar no grupo!</div>
-        <div class="toast-meta">
-          <span class="toast-meta-tag">● Recente</span>
-          <span>• Acesso VIP garantido</span>
-        </div>
+      <div class="support-btn-text">
+        <span class="support-text-main">Precisa de ajuda? Me chame</span>
+        <span class="support-text-sub">Atendimento Online • WhatsApp</span>
       </div>
+    </a>
+  </div>
+
+  <!-- === MODAL DISCRETA DE INTENÇÃO DE SAÍDA (EXIT-INTENT) === -->
+  <div id="exit-modal" class="exit-modal-backdrop">
+    <div class="exit-modal-card">
+      <button class="exit-close-btn" onclick="closeExitModal()">&times;</button>
+      <div class="exit-modal-badge">Espere um momento</div>
+      <h3 class="exit-modal-title">Antes de ir embora... Ficou com alguma dúvida?</h3>
+      <p class="exit-modal-desc">
+        As vagas com preços de Black Friday são limitadas para a agenda de novembro. Converse diretamente com a equipe para garantir a sua vaga ou tirar dúvidas sobre o melhor protocolo.
+      </p>
+      <a href="#" class="support-btn-pill" style="width: 100%; justify-content: center;" onclick="openWhatsAppGeneral('Dúvida antes de sair do catálogo'); closeExitModal(); return false;">
+        <div class="support-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
+        </div>
+        <span class="support-text-main">Tirar Dúvida no WhatsApp</span>
+      </a>
     </div>
   </div>
 
   <script>
-    // Link do WhatsApp
-    const DEFAULT_WHATSAPP_LINK = "https://chat.whatsapp.com/KqTUe1b6V32695FqRzC1Vm";
-    const params = new URLSearchParams(window.location.search);
-    const linkParam = params.get('link') || params.get('url');
-    const finalLink = linkParam ? decodeURIComponent(linkParam) : DEFAULT_WHATSAPP_LINK;
-    
-    const btn = document.getElementById('whatsapp-btn');
-    if (btn) {
-      btn.href = finalLink;
-      btn.addEventListener('click', function() {
-        if (typeof fbq === 'function') {
-          fbq('track', 'Lead', {
-            content_name: 'Entrada Grupo VIP Black Friday',
-            content_category: 'Procedimentos Esteticos'
-          });
-          fbq('trackCustom', 'ClickWhatsApp');
+    // === CONFIGURAÇÃO DE WHATSAPP ===
+    // Pode ser configurado aqui, passado via URL (?phone=55...) ou direcionado para link de atendimento
+    const urlParams = new URLSearchParams(window.location.search);
+    const WHATSAPP_PHONE = urlParams.get('phone') || ""; // Caso queira fixar: "55..."
+    const FALLBACK_LINK = urlParams.get('link') || "https://chat.whatsapp.com/KqTUe1b6V32695FqRzC1Vm";
+
+    function buildWhatsAppUrl(messageText) {
+      if (WHATSAPP_PHONE && WHATSAPP_PHONE.trim() !== "") {
+        const cleanPhone = WHATSAPP_PHONE.replace(/\D/g, '');
+        return `https://wa.me/${cleanPhone}?text=${encodeURIComponent(messageText)}`;
+      }
+      // Se não houver número configurado, usa fallback e se for wa.me/api.whatsapp permite texto
+      if (FALLBACK_LINK.includes('wa.me') || FALLBACK_LINK.includes('api.whatsapp.com')) {
+        const separator = FALLBACK_LINK.includes('?') ? '&' : '?';
+        return `${FALLBACK_LINK}${separator}text=${encodeURIComponent(messageText)}`;
+      }
+      return FALLBACK_LINK;
+    }
+
+    // Abertura do WhatsApp geral (botão flutuante)
+    function openWhatsAppGeneral(context) {
+      const msg = context 
+        ? `Olá Luciane! Estava no catálogo de Black Friday e gostaria de tirar uma dúvida: ${context}`
+        : `Olá Luciane! Estava dando uma olhada no catálogo da Black Friday e preciso de ajuda com os procedimentos.`;
+      
+      trackMetaEvent('ClickWhatsAppGeneral', { context: context || 'BotaoAtendimentoFlutuante' });
+      window.open(buildWhatsAppUrl(msg), '_blank');
+    }
+
+    // Abertura do WhatsApp específico para um procedimento
+    function openWhatsAppWithProcedure(procedureName, price) {
+      const msg = `Olá Luciane! Vi no catálogo de Black Friday a oferta de *${procedureName}* por *${price}* e gostaria de agendar / tirar dúvidas!`;
+      trackMetaEvent('ClickWhatsAppProcedure', { procedure: procedureName, price: price });
+      window.open(buildWhatsAppUrl(msg), '_blank');
+    }
+
+    // Disparo seguro do Meta Pixel
+    function trackMetaEvent(eventName, params) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', {
+          content_name: params.procedure || 'Atendimento Catalogo Black Friday',
+          content_category: 'Procedimentos Esteticos'
+        });
+        fbq('trackCustom', eventName, params);
+      }
+    }
+
+    // === FUNCIONAMENTO DO ACORDEÃO ===
+    function toggleAccordion(headerBtn) {
+      const item = headerBtn.closest('.accordion-item');
+      const content = item.querySelector('.accordion-content');
+      const isOpen = item.classList.contains('active');
+
+      // Fecha todos os outros acordeões suavemente
+      document.querySelectorAll('.accordion-item.active').forEach(openItem => {
+        if (openItem !== item) {
+          openItem.classList.remove('active');
+          openItem.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+          openItem.querySelector('.accordion-content').style.maxHeight = null;
+        }
+      });
+
+      if (!isOpen) {
+        item.classList.add('active');
+        headerBtn.setAttribute('aria-expanded', 'true');
+        content.style.maxHeight = content.scrollHeight + 40 + 'px';
+      } else {
+        item.classList.remove('active');
+        headerBtn.setAttribute('aria-expanded', 'false');
+        content.style.maxHeight = null;
+      }
+    }
+
+    // === FILTRO DE CATEGORIAS (TODOS / FACIAIS / CORPORAIS) ===
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const categorySections = document.querySelectorAll('.section-category');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        const filter = btn.getAttribute('data-filter');
+
+        categorySections.forEach(section => {
+          const sectionCat = section.getAttribute('data-category');
+          if (filter === 'all' || filter === sectionCat) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Abre o primeiro item (Botox) por padrão para guiar o visitante
+    window.addEventListener('DOMContentLoaded', () => {
+      const firstItem = document.getElementById('item-botox');
+      if (firstItem) {
+        const header = firstItem.querySelector('.accordion-header');
+        toggleAccordion(header);
+      }
+    });
+
+    // === BALÃO DE ATENDIMENTO E EFEITO EXIT-INTENT / VIBRAÇÃO ===
+    const supportTooltip = document.getElementById('support-tooltip');
+    const floatingBtn = document.getElementById('floating-support-btn');
+    const exitModal = document.getElementById('exit-modal');
+    let exitTriggered = false;
+
+    function closeSupportTooltip() {
+      if (supportTooltip) {
+        supportTooltip.classList.remove('active');
+      }
+    }
+
+    function closeExitModal() {
+      if (exitModal) {
+        exitModal.classList.remove('show');
+      }
+    }
+
+    // Ativa vibração no botão de atendimento
+    function triggerVibrationNotice() {
+      if (floatingBtn) {
+        floatingBtn.classList.add('vibrating');
+        // Vibração física no dispositivo se suportado
+        if ("vibrate" in navigator) {
+          try {
+            navigator.vibrate([100, 60, 100, 60, 150]);
+          } catch(e) {}
+        }
+        setTimeout(() => {
+          floatingBtn.classList.remove('vibrating');
+        }, 4000);
+      }
+
+      if (supportTooltip) {
+        supportTooltip.classList.add('active');
+        setTimeout(() => {
+          supportTooltip.classList.remove('active');
+        }, 6000);
+      }
+    }
+
+    // Exibe o balão de atendimento automaticamente após 6 segundos
+    setTimeout(() => {
+      if (supportTooltip && !exitTriggered) {
+        supportTooltip.classList.add('active');
+        setTimeout(() => {
+          supportTooltip.classList.remove('active');
+        }, 7000);
+      }
+    }, 6000);
+
+    // Detecta intenção de saída pelo mouse (cursor saindo do topo da janela)
+    document.addEventListener('mouseleave', (e) => {
+      if (e.clientY <= 15 && !exitTriggered) {
+        exitTriggered = true;
+        triggerVibrationNotice();
+        if (exitModal) {
+          exitModal.classList.add('show');
+        }
+      }
+    });
+
+    // Fechar modal ao clicar fora
+    if (exitModal) {
+      exitModal.addEventListener('click', (e) => {
+        if (e.target === exitModal) {
+          closeExitModal();
         }
       });
     }
-
-    // === ANIMAÇÃO SUBINDO: MAIS UMA PESSOA ENTROU NO GRUPO ===
-    const names = [
-      "Camila R.", "Patrícia M.", "Renata S.", "Juliana F.", "Fernanda C.",
-      "Beatriz L.", "Aline V.", "Mariana T.", "Carolina B.", "Larissa D.",
-      "Gabriela N.", "Débora P.", "Vanessa M.", "Bruna A.", "Amanda K."
-    ];
-
-    let memberCount = 43;
-    const counterEl = document.getElementById('counter-members');
-    const toast = document.getElementById('toast');
-    const toastTitle = document.getElementById('toast-title');
-
-    function showEntryNotification() {
-      const randomName = names[Math.floor(Math.random() * names.length)];
-      toastTitle.innerHTML = `<strong>${randomName}</strong> acabou de entrar no grupo!`;
-      
-      // Incrementa o contador na tela
-      memberCount++;
-      if (counterEl) {
-        counterEl.textContent = memberCount;
-      }
-
-      // Mostra a notificação subindo
-      toast.classList.add('show');
-
-      // Oculta após 3.5 segundos
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 3500);
-    }
-
-    // Primeira notificação após 2 segundos de carregamento
-    setTimeout(() => {
-      showEntryNotification();
-      
-      // Notificações subsequentes em intervalos aleatórios entre 5s e 8s
-      function scheduleNext() {
-        const nextInterval = Math.floor(Math.random() * (8000 - 5000 + 1)) + 5000;
-        setTimeout(() => {
-          showEntryNotification();
-          scheduleNext();
-        }, nextInterval);
-      }
-      scheduleNext();
-    }, 2200);
   </script>
 </body>
 </html>
