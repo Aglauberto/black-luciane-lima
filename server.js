@@ -2,7 +2,6 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
 const PUBLIC_DIR = __dirname;
 
 const MIME_TYPES = {
@@ -50,6 +49,20 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Preview server running at http://localhost:${PORT}`);
-});
+function startServer(port) {
+  server.once('error', (err) => {
+    if (err.code === 'EADDRINUSE') {
+      console.log(`Porta ${port} em uso, tentando porta ${port + 1}...`);
+      startServer(port + 1);
+    } else {
+      console.error('Erro no servidor:', err);
+    }
+  });
+
+  server.listen(port, () => {
+    console.log(`Preview server running at http://localhost:${port}`);
+  });
+}
+
+const initialPort = parseInt(process.env.PORT, 10) || 3000;
+startServer(initialPort);
