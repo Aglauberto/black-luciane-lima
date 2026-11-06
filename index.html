@@ -79,37 +79,25 @@
     /* Faixa Oficial no Topo (Ribbon Banner) */
     .top-ribbon-bar {
       width: 100%;
-      background: #020712;
-      border-bottom: 1px solid rgba(56, 189, 248, 0.35);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.8);
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       height: 48px;
-      margin-bottom: 16px;
+      background-color: #030814;
+      background-image: url('assets/faixa-topo.png');
+      background-repeat: repeat-x;
+      background-position: 0 49.6%;
+      background-size: auto 265px;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.4);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.85);
       position: sticky;
       top: 0;
       z-index: 90;
+      margin-bottom: 16px;
+      animation: ribbon-pan 25s linear infinite;
     }
 
-    .ribbon-track {
-      display: flex;
-      align-items: center;
-      width: max-content;
-      animation: ribbon-scroll 24s linear infinite;
+    @keyframes ribbon-pan {
+      0% { background-position-x: 0; }
+      100% { background-position-x: -768px; }
     }
-
-    .ribbon-img {
-      height: 46px;
-      width: auto;
-      object-fit: contain;
-      flex-shrink: 0;
-      display: block;
-    }
-
-    @keyframes ribbon-scroll {
-      0% { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
 
@@ -428,35 +416,7 @@
       z-index: 1;
     }
 
-    .photo-overlay-tag {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      z-index: 3;
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
-      text-transform: uppercase;
-      background: rgba(7, 9, 14, 0.85);
-      border: 1px solid rgba(56, 189, 248, 0.45);
-      color: #38bdf8;
-      padding: 4px 10px;
-      border-radius: 999px;
-      backdrop-filter: blur(8px);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    .photo-overlay-tag::before {
-      content: "";
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: #38bdf8;
-      box-shadow: 0 0 6px #38bdf8;
-    }
+    
 
     .photo-placeholder {
       display: flex;
@@ -893,12 +853,7 @@
 <body>
 
   <!-- === FAIXA OFICIAL BLACK FRIDAY NO TOPO === -->
-  <div class="top-ribbon-bar" aria-label="Black Friday Dra. Luciane Lima">
-    <div class="ribbon-track">
-      <img src="assets/faixa-topo-cropped.png" alt="Black Friday • Dra. Luciane Lima" class="ribbon-img">
-      <img src="assets/faixa-topo-cropped.png" alt="Black Friday • Dra. Luciane Lima" class="ribbon-img" aria-hidden="true">
-    </div>
-  </div>
+  <div class="top-ribbon-bar" aria-label="Black Friday • Dra. Luciane Lima"></div>
 
   <div class="container">
 
@@ -913,7 +868,7 @@
       <!-- Nome somente em branco -->
       <h1 class="main-title">Catálogo de Black Friday</h1>
       <p class="clinic-subtitle">
-        Toque no procedimento para ver detalhes, fotos e valores.
+        Toque no procedimento para ver<br>detalhes, fotos e valores.
       </p>
 
       <!-- FILTRO DE CATEGORIAS (MOBILE) -->
@@ -966,7 +921,6 @@
               <!-- BOX PADRONIZADA ANTES & DEPOIS -->
               <div class="before-after-box" id="box-botox">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <!-- DETALHES -->
@@ -1035,7 +989,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-bioestimulador">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1102,7 +1055,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-preenchimento">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1169,7 +1121,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-cicatriz-acne">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1236,7 +1187,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-microagulhamento">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1303,7 +1253,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-dermaplaning">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1370,7 +1319,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-peeling">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1430,7 +1378,7 @@
         <article class="accordion-item" id="item-gluteo" data-category="corporal">
           <button class="accordion-header" aria-expanded="false" onclick="toggleAccordion(this)">
             <div class="accordion-header-left">
-              <h3 class="procedure-name">Preenchimento Glúteo 20ml</h3>
+              <h3 class="procedure-name">Harmonização Glútea 20ml</h3>
             </div>
             <div class="accordion-header-right">
               <div class="header-price-preview">
@@ -1449,7 +1397,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-gluteo">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
@@ -1483,9 +1430,9 @@
                     ou em até <strong>12x de R$ 329,90</strong> no cartão
                   </div>
 
-                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Preenchimento Glúteo 20ml', 'R$ 3.299,90 à vista ou 12x de R$ 329,90'); return false;">
+                  <a href="#" class="btn-procedure-action" onclick="openWhatsAppWithProcedure('Harmonização Glútea 20ml', 'R$ 3.299,90 à vista ou 12x de R$ 329,90'); return false;">
                     <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-5.46-4.45-9.92-9.91-9.92zm5.82 14.04c-.24.68-1.41 1.29-1.94 1.38-.5.08-1.12.12-3.62-.91-3.21-1.32-5.26-4.57-5.42-4.78-.16-.22-1.3-1.73-1.3-3.3 0-1.57.82-2.35 1.11-2.67.29-.32.63-.4.84-.4.21 0 .42.01.6.02.19.01.44-.07.69.52.25.6.87 2.12.95 2.27.08.16.14.35.03.56-.11.22-.16.35-.32.54-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.19.32.84 1.38 1.81 2.24 1.25 1.11 2.3 1.45 2.62 1.61.32.16.51.14.7-.08.19-.22.82-.95 1.04-1.28.22-.32.44-.27.73-.16.29.11 1.84.87 2.16 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
-                    Quero Preenchimento Glúteo (20ml)
+                    Quero Harmonização Glútea (20ml)
                   </a>
                 </div>
               </div>
@@ -1516,7 +1463,6 @@
             <div class="accordion-body-mobile">
               <div class="before-after-box" id="box-criolipolise">
                 <img src="assets/exemplo-depois.jpg" alt="Resultado de Tratamento" class="procedure-photo">
-                <span class="photo-overlay-tag">Resultado Real</span>
               </div>
 
               <div class="procedure-details">
